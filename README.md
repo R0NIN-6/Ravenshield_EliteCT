@@ -21,5 +21,5 @@ I created this guide to help players change the enemy presets for any map to exp
 Copy the file 'MP_Multi2.ini' to 'mods/athenasword/maps/', the Ferry Boat map will now show up in the custom mission map list.
 [In Progress: Bulk export textures and upscale](RvSBulkImageConvert.ps1) 
 A Powershell script that can export all textures from the game in bulk, convert to png, and then run each file through an AI-improvement algorithm called ESRGAN that runs on Python. 
-[In Progress: Bulk edit Template files(BulkEdit-TemplateFiles.ps1) 
+[In Progress: Bulk edit Template files](BulkEdit-TemplateFiles.ps1) 
 A Powershell script that can process bulk editing of template files for enemy and hostage types. 
