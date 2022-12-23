@@ -6,7 +6,6 @@ Elite Counter-Terror download: https://www.moddb.com/mods/elite-counter-terror
 # Guides
 - [Importing new textures](RetextureGuide.md)
 My "Retexture Guide" which you can use to import custom textures into the game.
-(https://www.pcgamingwiki.com/wiki/Tom_Clancy%27s_Rainbow_Six_3:_Raven_Shield#Restore_3D_audio_and_EAX) 
 - [Increase enemy count in Custom Missions](IncreaseEnemyCount.md)
 I created this guide to modify an internal setting  and unlock the enemy count past 35 in custom missions. 
 - [Edit Template Files to change Enemies and Hostages](TemplateEditing.md)
