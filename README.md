@@ -23,3 +23,6 @@ Copy the file 'MP_Multi2.ini' to 'mods/athenasword/maps/', the Ferry Boat map wi
 In Progress: A Powershell script that can export all textures from the game in bulk, convert to png, and then run each file through an AI-improvement algorithm called ESRGAN that runs on Python. 
 - [Bulk edit Template files](BulkEdit-TemplateFiles.ps1) 
 In Progress: A Powershell script that can process bulk editing of template files for enemy and hostage types. 
+
+# Unreal Script Code
+
