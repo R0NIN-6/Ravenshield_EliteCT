@@ -14,7 +14,6 @@ My "Retexture Guide" which you can use to import custom textures into the game.
 Powershell script to quickly get EAX audio enabled in the game which will give a noticeable upgrade to audio, it is a work in progress. You have to run the script from an elevated shell and enter your ravenshield path in the script for it to work. [Source](https://www.pcgamingwiki.com/wiki/Tom_Clancy%27s_Rainbow_Six_3:_Raven_Shield#Restore_3D_audio_and_EAX) 
 - [Increase enemy count in Custom Missions](IncreaseEnemyCount.md)
 I created this guide to modify an internal setting  and unlock the enemy count past 35 in custom missions. 
-https://www.pcgamingwiki.com/wiki/Tom_Clancy%27s_Rainbow_Six_3:_Raven_Shield#Restore_3D_audio_and_EAX) 
 - [Edit Template Files to change Enemies and Hostages](TemplateEditing.md)
 I created this guide to help players change the enemy presets for any map to experiment with different and more challenging terrorist combinations, also applies to hostages. 
 - [Restore Ferry Boat map](MP_Multi2.ini)
