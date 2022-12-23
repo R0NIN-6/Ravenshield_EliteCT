@@ -19,7 +19,7 @@ https://www.pcgamingwiki.com/wiki/Tom_Clancy%27s_Rainbow_Six_3:_Raven_Shield#Res
 I created this guide to help players change the enemy presets for any map to experiment with different and more challenging terrorist combinations, also applies to hostages. 
 - [Restore Ferry Boat map](MP_Multi2.ini)
 Copy the file 'MP_Multi2.ini' to 'mods/athenasword/maps/', the Ferry Boat map will now show up in the custom mission map list.
-[In Progress: Bulk export textures and upscale](RvSBulkImageConvert.ps1) 
-A Powershell script that can export all textures from the game in bulk, convert to png, and then run each file through an AI-improvement algorithm called ESRGAN that runs on Python. 
-[In Progress: Bulk edit Template files](BulkEdit-TemplateFiles.ps1) 
-A Powershell script that can process bulk editing of template files for enemy and hostage types. 
+- [Bulk export textures and upscale](RvSBulkImageConvert.ps1) 
+In Progress: A Powershell script that can export all textures from the game in bulk, convert to png, and then run each file through an AI-improvement algorithm called ESRGAN that runs on Python. 
+- [Bulk edit Template files](BulkEdit-TemplateFiles.ps1) 
+In Progress: A Powershell script that can process bulk editing of template files for enemy and hostage types. 
