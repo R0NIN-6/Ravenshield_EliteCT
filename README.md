@@ -10,3 +10,4 @@ Elite Counter-Terror download: https://www.moddb.com/mods/elite-counter-terror
 4. An .ini file that you can put in your Athena Sword maps folder that will restore the Ferry map in custom missions. Copy the file 'MP_Multi2.ini' to 'mods/athenasword/maps/', the map will now show up in the custom mission map list. 
 5. My "Retexture Guide" which you can use to import custom textures into the game. 
 6. WIP: a Powershell script that can export all textures from the game in bulk, convert to png, and then run each file through an AI-improvement algorithm called ESRGAN that runs on Python. 
+7. WIP: A Powershell script that can process bulk editing of template files for enemy and hostage types. 
