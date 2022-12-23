@@ -11,7 +11,7 @@ Powershell script that works with the batch file in the repo to automate the pro
 - [Importing new textures](RetextureGuide.md)
 My "Retexture Guide" which you can use to import custom textures into the game.
 - [Enable EAX](SetRegistryEAX.ps1)
-Powershell script to quickly get EAX audio enabled in the game which will give a noticeable upgrade to audio, it is a work in progress. You have to run the script from an elevated shell and enter your ravenshield path in the script for it to work. (source and how to set-up manually: https://www.pcgamingwiki.com/wiki/Tom_Clancy%27s_Rainbow_Six_3:_Raven_Shield#Restore_3D_audio_and_EAX) 
+Powershell script to quickly get EAX audio enabled in the game which will give a noticeable upgrade to audio, it is a work in progress. You have to run the script from an elevated shell and enter your ravenshield path in the script for it to work. [Source](https://www.pcgamingwiki.com/wiki/Tom_Clancy%27s_Rainbow_Six_3:_Raven_Shield#Restore_3D_audio_and_EAX) 
 - [Increase enemy count in Custom Missions](IncreaseEnemyCount.md)
 I created this guide to modify an internal setting  and unlock the enemy count past 35 in custom missions. 
 https://www.pcgamingwiki.com/wiki/Tom_Clancy%27s_Rainbow_Six_3:_Raven_Shield#Restore_3D_audio_and_EAX) 
