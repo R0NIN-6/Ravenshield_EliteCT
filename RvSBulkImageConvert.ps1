@@ -1,5 +1,5 @@
-﻿$Inputdirectory = "C:\Users\alcanto\Desktop\UmodelExport\\"
-$OutputDirectory = "C:\Users\alcanto\Desktop\ConvertedPNGs"
+﻿$Inputdirectory = "<path to UE Viewer>\UmodelExport\\"
+$OutputDirectory = "<full path>\ConvertedPNGs"
 $TextureSubFolders = gci -Path $Inputdirectory -Recurse -Directory -Filter Texture | select fullname
 $strFolder =""
 $folderName =""
