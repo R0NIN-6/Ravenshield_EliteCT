@@ -4,6 +4,8 @@ A Repository for Unreal script and development tools used for creating Ravenshie
 Elite Counter-Terror download: https://www.moddb.com/mods/elite-counter-terror
 
 # Guides
+- [Development Environment Set-up](Ravenshield Modder Enviroment.md)
+My Ravenshield Modder's development environment guide will help you take advantage of modern tools to create a highly-efficient process for your work.  
 - [Importing new textures](RetextureGuide.md)
 My "Retexture Guide" which you can use to import custom textures into the game.
 - [Increase enemy count in Custom Missions](IncreaseEnemyCount.md)
