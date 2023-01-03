@@ -10,7 +10,7 @@ Note: To find this value yourself, use UTPT to open the 'R6Menu' file, locate th
 ![HxD](HxD01.png)  
 4. Save this file in HxD, exit and run the game. You should see you're new value in the custom mission menu!  
 ![Custom Mission Menu](CustomMission50Hack.png)  
-5. Keep in mind that if the map has less spawn points than the number you select, but luckily the map WILL still end if you kill all the spawned terrorists. I have made it to 50 on several vanilla maps but others capped out at 40. Some of the newer fan-made maps have a much greater number, like the Military Base V4.1 I show in one of my new videos. You'll have to experiment.  
+5. Keep in mind that if the map has less spawn points than the number you select, but luckily the map WILL still end if you kill all the spawned terrorists. I have made it to 50 on several vanilla maps but others capped out at 40. Some of the newer fan-made maps have a much greater number, like the Military Base V4.1 I show in one of my older videos. You'll have to experiment.  
 
 
 
