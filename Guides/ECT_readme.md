@@ -8,21 +8,24 @@ by AC11b and the community
 ## **Stand-alone Install instructions**
 ECT contains new code classes and icons. There are 2 ways to install depending on your preference
 - If you have ECT 1.27 or prior, I recommend removing it and doing a fresh install of the game. Version 2 and forward will not be compatible due to a new folder structure. 
-1. On a **vanilla** install, Copy the contents of "StandaloneFiles/VanillaVersion" into your Ravenshield directory. 
-	* Advanced users may prefer to edit their Ravenshield.mod file manually, to do so make sure to swap the default AI, pawn, and player controller class as well as add the actor package at the bottom.
-	* This version will see fewer updates because the majority of development is spent on the other versions, as of 2.06 it has the same features excpet for those that are related to other mods, i.e. team using their lasers)	
-2. On a Ravenshield copy with the latest **Supply Drops (Oct 2020 - patch 1)** installed, copy the contents of "StandaloneFiles/SupplyDropsVersion" files into the Ravenshield/directory. 
-    - You will see "ECT v2.x | SD by Twi" in the bottom right corner of the main menu if installed correctly. 
+1. On a **vanilla** install, Copy the contents of `StandaloneFiles/VanillaVersion` into your Ravenshield directory. 
+	* Advanced users may prefer to edit their `Ravenshield.mod` file manually, to do so make sure to swap the default AI, pawn, and player controller class as well as add the actor package at the bottom. Refer to my `.mod` file to see the correct naming convention.
+	* This version will see fewer updates because the majority of development is spent on the other versions, as of 2.06 it has the same features except for those that are related to other mods, i.e. team using their lasers)	
+2. On a Ravenshield copy with the latest **Supply Drops (Oct 2020 + patch 1)** installed, copy the contents of `StandaloneFiles/SupplyDropsVersion` files into the Ravenshield directory. 
+    - You will see `ECT v2.x | SD by Twi` in the bottom right corner of the main menu if installed correctly. 
 	- I try to avoid putting anyting in the main directory but custom sound packs only work if they are there. 
-	- If you want to edit your SupplyDrops.mod file manually, make sure you swap the default AI, pawn, and player controller class. You do not need to add the actor package at the bottom because it is compiled differently.  
+    	- As of v2.06, no extra sound files are needed.
+	- If you want to edit your `SupplyDrops.mod` file manually, make sure you swap the default AI, pawn, and player controller class. You do not need to add the actor package at the bottom because it is compiled differently than the vanilla version.  
 ### The only requirement is _OpenRVS 1.5_ by Twi regardless of the version you use.  
 # ECT Rainbow AI features: 
 - Based off Jose21Crisis's Rainbow AI Enhancer V2 (which is itself an upgrade of Malleus AI). The improved team FOV, single-shot firing, and team NVG animations in those mods are present here as well. 
-- Overhauls Rules of Engagement: AI will not engage with unsilenced weapons when not in assault mode and if in infiltrate they will switch to silenced secondary weapons.  
-Example: You have 2 teams, and the rear member in each formation carries a unsilenced shotgun and a silenced pistol. When the team is in infiltrate, the rear member will switch to secondary and engage freely. When the team switches to assault, the rear member will switch back to the unsilenced primary and engage targets. This works for both when ROE is switched by the player or it is set from the mission plan. 
-- Radio Silence: Disables all verbal communication for your team, meant to simulate extreme stealth situations. Using with NVGs and IR lasers is highly recommended for the ultimate tactical edge! Can be switched on/off and is agnostic of ROE. In v1 this was tied to ROE but I disabled that after feedback. Team will always use hand-signals in infil/recon.
+- Overhauls **Rules of Engagement**
+  - AI will not engage with unsilenced weapons when not in assault mode and if in infiltrate they will switch to silenced secondary weapons.  
+  - Example: You have 2 teams, and the rear member in each formation carries a unsilenced shotgun and a silenced pistol. When the team is in infiltrate, the rear member will switch to secondary and engage freely. When the team switches to assault, the rear member will switch back to the unsilenced primary and engage targets. This works for both when ROE is switched by the player or it is set from the mission plan. 
+- **Radio Silence**: Disables all verbal communication for your team, meant to simulate extreme stealth situations. Using with NVGs and IR lasers is highly recommended for the ultimate tactical edge! Can be switched on/off and is agnostic of ROE. In v1 this was tied to ROE but I disabled that after feedback. Team will always use hand-signals in infil/recon.
 	- To enable this optional feature, open your 'User.ini' file (located in Ravenshield\Save\Profiles) and add the value `ToggleRadioSilence` to any unassigned key UNDER the section `[Engine.Input]`. This key will now toggle silence on/off. Currently still in testing and it gets reset whenever the active player dies and switches to another member, or when a flash-bang goes off.
-- Overhauls room clearing and breaching: The first 2 members into a room will attack the opposite corners and then shift their sights on the center room, and the remaining members will file into the room. When in infiltrate and recon team will crouch run into position, to avoid letting anyone on the other side hear them approaching. 
+- Overhauls **room clearing**
+  - The first 2 members into a room will attack the opposite corners and then shift their sights on the center room, and the remaining members will file into the room. When in infiltrate and recon team will crouch run into position, to avoid letting anyone on the other side hear them approaching. 
 - When your team moves out, there will be a ripple effect so that the rear team-member in the formation can hold their position for a split second longer then the previous men to avoid colliding and keep each other covered. 
 - Overhauls team speed and stance for when they are given an order to move out, throw a grenade, or interact with an object (see guide below)
 - Fast move order from your team, when holding shift you'll see "fast move" icon and your teammates will sprint (or crouch run) to the target location instead of walking (works even if the target location is out of sight). The Player's tone in the command is also different from the normal move command. 
@@ -70,7 +73,7 @@ If you have any suggestions or any questions on compiling/modding please let me 
 
 ## **Change Log**
 ### Version 2.061 Patch (1/9/2022)
-- A change to enemy surrendering I re-introduced in 2.05 seems to have caused a bad bug when you send the AI to arrest an enemy. Until I fix this and take a thorough look at the process, I'll leave the terrorist AI to vanilla. This was only on the Supply Drops version.
+- A change to enemy surrendering I re-introduced in 2.05 seems to have caused enemies to die suddenly when you send the AI to arrest them. Until I fix this and take a thorough look at the process, I'll leave the terrorist AI to vanilla. This was only on the Supply Drops version.
 - Also on the SD version, the 'frag and move' order for your team seems to have disapeared, most likely because Supply Drops uses a custom class to replace the Vanilla frag class with a new mesh and explosion effects. Again, I've disabled this change until a permanent solution is found.
 - The readme in the download has been reduced and this online readme has been created using markdown to format text. This changelog will be kept in the online version only.
 ### Version 2.06 Update (1/8/2022)
