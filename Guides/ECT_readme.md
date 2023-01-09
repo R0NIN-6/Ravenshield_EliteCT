@@ -22,7 +22,7 @@ ECT contains new code classes and icons. There are 2 ways to install depending o
 - Overhauls **Rules of Engagement**
   - AI will not engage with unsilenced weapons when not in assault mode and if in infiltrate they will switch to silenced secondary weapons.  
   - Example: You have 2 teams, and the rear member in each formation carries a unsilenced shotgun and a silenced pistol. When the team is in infiltrate, the rear member will switch to secondary and engage freely. When the team switches to assault, the rear member will switch back to the unsilenced primary and engage targets. This works for both when ROE is switched by the player or it is set from the mission plan. 
-- **Radio Silence**: Disables all verbal communication for your team, meant to simulate extreme stealth situations. Using with NVGs and IR lasers is highly recommended for the ultimate tactical edge! Can be switched on/off and is agnostic of ROE. In v1 this was tied to ROE but I disabled that after feedback. Team will always use hand-signals in infil/recon.
+- **Radio Silence**: Disables all verbal communication for your team, meant to simulate extreme stealth situations. Using with NVGs and IR lasers is highly recommended for the ultimate tactical edge! Can be switched on/off and is agnostic of ROE. In v1 this was tied to ROE but I disabled that after feedback. Team will always use hand-signals in infiltrate or recon.
 	- To enable this optional feature, open your 'User.ini' file (located in Ravenshield\Save\Profiles) and add the value `ToggleRadioSilence` to any unassigned key UNDER the section `[Engine.Input]`. This key will now toggle silence on/off. Currently still in testing and it gets reset whenever the active player dies and switches to another member, or when a flash-bang goes off.
 - Overhauls **room clearing**
   - The first 2 members into a room will attack the opposite corners and then shift their sights on the center room, and the remaining members will file into the room. When in infiltrate and recon team will crouch run into position, to avoid letting anyone on the other side hear them approaching. 
@@ -45,7 +45,7 @@ Sprint
 Walk 
 	- Cautious:
 crouch-run
-### **Infilitrate**
+### **Infiltrate**
 - Violence of action :
 Engage all targets on sight, but only if weapon is silenced. If primary is not silenced, they will switch to secondary if that is silenced
 - Movement :
@@ -76,12 +76,12 @@ Movement - Crouch-walking by default, crouch-run with fast-move modifier
 If you have any suggestions or any questions on compiling/modding please let me know!  
 - Discord: ac11b#9459
 - Youtube: Watch ECT in [action](https://www.youtube.com/@ac11b63)
-- Github: I moved my guides and development tools to my [repository](https://github.com/R0NIN-6/Ravenshield_EliteCT). Learn how to set-up an automated development enviroment for modding and much more!  
+- Github: I moved my guides and development tools to my [repository](https://github.com/R0NIN-6/Ravenshield_EliteCT). Learn how to set-up an automated development environment for modding and much more!  
 
 ## **Change Log**
 ### Version 2.061 Patch (1/9/2022)
 - A change to enemy surrendering I re-introduced in 2.05 seems to have caused enemies to die suddenly when you send the AI to arrest them. Until I fix this and take a thorough look at the process, I'll leave the terrorist AI to vanilla. This was only on the Supply Drops version.
-- Also on the SD version, the 'frag and move' order for your team seems to have disapeared, most likely because Supply Drops uses a custom class to replace the Vanilla frag class with a new mesh and explosion effects. Again, I've disabled this change until a permanent solution is found.
+- Also on the SD version, the 'frag and move' order for your team seems to have disappeared, most likely because Supply Drops uses a custom class to replace the Vanilla frag class with a new mesh and explosion effects. Again, I've disabled this change until a permanent solution is found.
 - The readme in the download has been reduced and this online readme has been created using markdown to format text. This changelog will be kept in the online version only.
 ### Version 2.06 Update (1/8/2022)
 - Made an improvement to my communication code and eliminated the need for the additional sound package. The other benefit to the new system is the female voices for any additional voice commands like "reloading" and the new "Move" command for the Fast Move are automatically applied.
@@ -91,7 +91,7 @@ If you have any suggestions or any questions on compiling/modding please let me 
 ### Version 2.05 Update (12/30/2022)
 - Updated the vanilla Rainbow AI version to be on par with the SD version (no laser support, no terrorist changes yet)
 - Room clearing updated across the board and improved from v1, no more crouch-clearing 
-- AI teams will now turn on their night vision when they are in low-light, and turn them off when back in light. After struggling through the snowy night airport custom map, I realized the AI teams were probably not seeing well because they aren't programmed to handle darkness and turn on NVGs. So I added a little check anytime the AI team enters their patrolling state. If they enter a well-lit area, they will turn them off. There aren't alot of really dark maps to test this on so I will be making my own night version of maps. 
+- AI teams will now turn on their night vision when they are in low-light, and turn them off when back in light. After struggling through the snowy night airport custom map, I realized the AI teams were probably not seeing well because they aren't programmed to handle darkness and turn on NVGs. So I added a little check anytime the AI team enters their patrolling state. If they enter a well-lit area, they will turn them off. There aren't a lot of really dark maps to test this on so I will be making my own night version of maps. 
 - New ROE feature: AI will switch to silenced weapons if their primary is not silenced and they are in infiltrate. This works for player and AI teams. 
 - AI Grenade Move To command now incorporates ROE to determine stance/speed (i.e. they will crouch-walk to position and throw the grenade still crouched if in infiltrate/recon)
 - Re-introduced radio silence, now as an executable function but the user has to manually go to 'user.ini'. It doesn't stay on when you die or when a flash-bang goes off around you. 
@@ -112,6 +112,6 @@ If you have any suggestions or any questions on compiling/modding please let me 
 ### Version 2.01 patch (12/7/2022)
 - Fixed a SD version bug that was breaking gameplay whenever the player died. 
 ### Version 2.00 (12/2022)
-- I made changes to the folder structure that broke almost all features in my old code and started fresh. This was done to make the mod more like Twi's Supply Drop which is installed as a self-contained folder and thus does not put anything into the main directory. I still included a version that you can install onto a vanilla copy but as mentioned above you need OpenRVS 1.3 at a minimum. The Supply Drop version will be the same in terms of features but I had to compile it differently therefore it required a seperate version and much more testing.
+- I made changes to the folder structure that broke almost all features in my old code and started fresh. This was done to make the mod more like Twi's Supply Drop which is installed as a self-contained folder and thus does not put anything into the main directory. I still included a version that you can install onto a vanilla copy but as mentioned above you need OpenRVS 1.3 at a minimum. The Supply Drop version will be the same in terms of features but I had to compile it differently therefore it required a separate version and much more testing.
 
-An expansion pack with a collection of ECT+SD+Mercerneraries enemy pack+Updated Template files+other mods/community improvements is in development!
+An expansion pack with a collection of ECT+SD+Mercenaries enemy pack+Updated Template files+other mods/community improvements is in development!

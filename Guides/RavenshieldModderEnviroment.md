@@ -22,7 +22,7 @@
 4. Save this workspace by going to `File->Save Workspace As` and save the workspace file to any location. You can now open it in future sessions (if it doesn't open automatically) by going to `File->Open workspace from file`.
 5. The extension works by indexing the source code folder, and using that as a library for you when you create new classes. 
 - For example, if you create a new AI class the extension will give you *intellisense-like* prediction assistance with the dot operator, and will give you an error cue if you try to use an object that is not available to that class. 
-- The error messaging from the extension is far from perfect so always try to compile first from the SDK and always go by the error from the SDK output. The compiler error messaging on the other hand is suprisingly very accurate, it will almost always point you exactly to the code that needs fixing. The extension is just there for guidance and has no effect whatsoever on the compiler.
+- The error messaging from the extension is far from perfect so always try to compile first from the SDK and always go by the error from the SDK output. The compiler error messaging on the other hand is surprisingly very accurate, it will almost always point you exactly to the code that needs fixing. The extension is just there for guidance and has no effect whatsoever on the compiler.
 
 ## Set up automation Pipeline
 * This section assumes you have a project already set up that compiles successfully. This will help you set up an automated system for compiling, stripping
