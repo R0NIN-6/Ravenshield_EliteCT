@@ -1,21 +1,56 @@
-﻿#Compile ETC, if successful rename to .utx, move to game directory, and run the game
-#edit the values to match your system and then edit the batch file 
-cd '<full system path>\SDK2\Code Environment\system'
+﻿<#
+This script will create an automated sequence for the following:
+1. Compile your mod and check for errors
+2. Strip the source code
+3. If successful rename to .utx, and move to game directory (some advanced mods keep the .u extension, for now we'll use .utx)
+4. Send previous file to a backup folder with time-stamp appended to name
+5. Optional - run the game
 
-$file = '<path to Ravenshield SDK>\SDK2\<classname>.u'
+To use, edit the values to match your system and then edit the 2 batch files as specified in my IDE guide:
+compile_Custom.bat
+Strip_Custom.bat
+#>
 
-#point to the batch file you are using, has to be in 'code enviroment/system'
-$Process = Start-Process -Wait -PassThru -FilePath .\compile_ETC.bat 
+cls
+#Create a variable with the time stamp in the format mm-dd-yy-hour-minutes
+$TimeStamp = get-date -Format mmddyyhhmm
+#This should match the name of your project folder 
+$ProjectName ="Your Project Name"
+#The location of the file created by the SDK after compiling and stripping
+$Compiled_U_File = "<path to Ravenshield SDK>\SDK2\$ProjectName.u"
+#Where the file will reside within the Game directory (You don't have to use the same name here, but for the guide's sake we will keep it conisistent)
+$GameDir_File = "<path to Ravenshield\mods\$ProjectName.utx"
+#Arbitrary location where backup files will be stored
+$Backup_Dir ='path to any folder'
 
-
-$Process.StandardError
-if(Test-Path -PathType Leaf -Path $file)
+#First step, check if a compiled file already exists in the SDK and move it out to backup
+if(Test-Path -PathType Leaf -Path $Compiled_U_File)
 {
-Remove-Item -Path '<full system path to game directory\ravenshield\textures\<class name>.utx' -Force 
-Move-Item -Path $file -Destination '<full system path to game directory\ravenshield\textures\<class name>.utx' -Force 
-& '<full system path to game directory\ravenshield\system\RavenShield.exe' #mod=AthenaSword
+    Move-item -Path $Compiled_U_File -Destination "$Backup_Dir\$ProjectName-1$TimeStamp" -Force
+}
+
+#Execute the batch file you are using, has to be in 'code enviroment/system' and have your project name added within it (see guide)
+&'path to SDK\Code enviroment\system\compile_Custom.bat' 
+#Execute the strip batch file you are using, same as above
+&'path to SDK\Code enviroment\system\strip_Custom.bat' 
+
+#If compile and strip was successful, the file will exist at the defined location and script can proceed
+if(Test-Path -PathType Leaf -Path $Compiled_U_File)
+{
+    Write-Output "Compile success"
+
+    if(Test-Path -PathType Leaf -Path $GameDir_File)
+    {
+        Write-Output "Backing up old file"
+        Move-Item -Path $GameDir_File -Destination "$Backup_Dir\$ProjectName-2$TimeStamp" -Force 
+    }
+    Write-Output "Moving file to game directory"
+    Move-Item -Path $Compiled_U_File -Destination $GameDir_File -Force 
+    #If desired, uncomment to automatically start the game
+    #& '<full system path to game directory\ravenshield\system\RavenShield.exe' 
 }
 else
 {
-Write-Host "Compile failed" -ForegroundColor Red
+    #If the file doesn't exist, compile failed and the error will be shown in the output
+    Write-Host "Compile failed, check error message" -ForegroundColor Red
 }

@@ -1,7 +1,8 @@
 # **Elite Counter-Terror 2.06**
 ## Rainbow Six 3 Single-Player Mod
 by AC11b and the community  
-[Gameplay videos](https://www.youtube.com/@ac11b63)  
+[Gameplay videos](https://www.youtube.com/@ac11b63)    
+<iframe width="600" height="180" src="https://www.moddb.com/mods/elite-counter-terror/downloads/elite-counter-terror-v2/widget" frameborder="0"></iframe><br><a href="https://www.moddb.com/mods/elite-counter-terror/downloads/elite-counter-terror-v2">Download Elite Counter-Terror v2.06 - Mod DB</a>  
 
 <a href="https://www.moddb.com/mods/elite-counter-terror" title="View Elite Counter-Terror on Mod DB" target="_blank"><img src="https://button.moddb.com/popularity/medium/mods/35509.png" alt="Elite Counter-Terror" /></a>
 
@@ -11,13 +12,13 @@ by AC11b and the community
 ECT contains new code classes and icons. There are 2 ways to install depending on your preference
 - If you have ECT 1.27 or prior, I recommend removing it and doing a fresh install of the game. Version 2 and forward will not be compatible due to a new folder structure. 
 1. On a **vanilla** install, Copy the contents of "StandaloneFiles/VanillaVersion" into your Ravenshield directory. 
-	- Advanced users may prefer to edit their Ravenshield.mod file manually, to do so make sure to swap the default AI, pawn, and player controller class as well as add the actor package at the bottom.
-	- This version will see fewer updates because the majority of development is spent on the other versions, as of 2.06 it has the same features excpet for those that are related to other mods, i.e. team using their lasers)	
+	* Advanced users may prefer to edit their Ravenshield.mod file manually, to do so make sure to swap the default AI, pawn, and player controller class as well as add the actor package at the bottom.
+	* This version will see fewer updates because the majority of development is spent on the other versions, as of 2.06 it has the same features excpet for those that are related to other mods, i.e. team using their lasers)	
 2. On a Ravenshield copy with the latest **Supply Drops (Oct 2020 - patch 1)** installed, copy the contents of "StandaloneFiles/SupplyDropsVersion" files into the Ravenshield/directory. 
     - You will see "ECT v2.x | SD by Twi" in the bottom right corner of the main menu if installed correctly. 
 	- I try to avoid putting anyting in the main directory but custom sound packs only work if they are there. 
 	- If you want to edit your SupplyDrops.mod file manually, make sure you swap the default AI, pawn, and player controller class. You do not need to add the actor package at the bottom because it is compiled differently.  
-### *The only requirement is OpenRVS 1.5 regardless of the version you use*  
+### The only requirement is _OpenRVS 1.5_ by Twi regardless of the version you use.  
 # ECT Rainbow AI features: 
 - Based off Jose21Crisis's Rainbow AI Enhancer V2 (which is itself an upgrade of Malleus AI). The improved team FOV, single-shot firing, and team NVG animations in those mods are present here as well. 
 - Overhauls Rules of Engagement: AI will not engage with unsilenced weapons when not in assault mode and if in infiltrate they will switch to silenced secondary weapons.  
