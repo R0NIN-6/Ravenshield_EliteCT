@@ -1,0 +1,16 @@
+Version=4
+
+Type=Hostage
+
+NbOfPawn=2
+50, MP2Characters.MP2HPrisonerB02
+50, MP2Characters.MP2HPrisonerB01
+Coward=0
+Normal=0
+Brave=0
+Bait=100
+
+Kneeling=0
+Standing=100
+
+StartAsCivilian=0

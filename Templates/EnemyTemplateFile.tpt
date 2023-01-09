@@ -1,0 +1,45 @@
+Version=5
+
+Type=Terrorist
+
+NbOfPawn=5
+020, WinterMercs.SnowMerc1
+020, WinterMercs.SnowMerc1
+020, WinterMercs.SnowMerc1
+020, WinterMercs.SnowMerc1
+020, WinterMercs.SnowMerc1
+
+NbOfWeapon=2
+50, R6Weapons.rNormalACR
+50, R6Weapons.ASNormalAssaultG3KA4
+
+NbOfGrenade=2
+025, R6Weapons.R6FragGrenadeGadget
+075, None.None
+
+Coward=0
+DeskJockey=0
+Normal=80
+Hardened=20
+SuicideBomber=0
+PSniper=0
+
+RndVariation=0
+Assault=90
+Demolitions=50
+Electronics=50
+SSniper=50
+Stealth=50
+SelfControl=50
+Leadership=50
+Observation=50
+Grenades=100
+
+Flashlight=0
+Laser=0
+Glasses=0
+Sunglasses=0
+Helmet=0
+Cap=0
+WinterCap=0
+Radio=50
