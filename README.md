@@ -2,7 +2,9 @@
 
 ## Elite Counter-Terror
 ### **Elite Counter-Terror** is a modifcation for Tom Clancy's Rainbow Six 3 that alters how the squad artificial intelligence performs.  
-- Download the latest version from [ModDb](https://www.moddb.com/mods/elite-counter-terror)  
+
+<a href="https://www.moddb.com/mods/elite-counter-terror/downloads/elite-counter-terror-v2" title="Download Elite Counter-Terror v2.06 - Mod DB" target="_blank"><img src="https://button.moddb.com/download/medium/242254.png" alt="Elite Counter-Terror v2.06" /></a>
+
 - View the formatted [readme](Guides/ECT_readme.md)  
 - View the [change-log](Guides/ECT_readme.md#change-log)
 - Watch my gameplay [videos](https://www.youtube.com/@ac11b63) 
@@ -11,13 +13,13 @@
 - [Ravenshield IDE Set-up](Guides/RavenshieldModderEnviroment.md)  
 My Ravenshield Modder's IDE (Integrated Development Environment) guide will help you take advantage of modern tools to create a highly-efficient process for your work.  
 - [Importing new textures](Guides/RetextureGuide.md)  
-My "Retexture Guide" which you can use to import custom textures into the game.
+My Retexture Guide to import custom textures into the game.
 - [Increase enemy count in Custom Missions](Guides/IncreaseEnemyCount.md)  
 I created this guide to modify an internal setting  and unlock the enemy count past 35 in custom missions. 
 - [Edit Template Files to change Enemies and Hostages](Guides/TemplateEditing.md)  
 I created this guide to help players change the enemy presets for any map to experiment with different and more challenging terrorist combinations, also applies to hostages. 
 - [Restore Ferry Boat map](Guides/MP_Multi2.ini)  
-Copy the file 'MP_Multi2.ini' to 'mods/athenasword/maps/', the Ferry Boat map will now show up in the custom mission map list.
+Copy the file `MP_Multi2.ini` to `mods/athenasword/maps/`, the Ferry Boat map will now show up in the custom mission map list.
 ## Development tools 
 ### These scripts were created to turbo-charge mod development and reduce errors.
 - [Compile and Move new code classes](Tools/Ravenshield-CompileMove.ps1)  

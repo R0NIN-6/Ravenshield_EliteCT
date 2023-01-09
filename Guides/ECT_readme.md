@@ -6,8 +6,8 @@ by AC11b and the community
 >                                                SHOOT-MOVE-COMMUNICATE-KILL 
 
 ## **Stand-alone Install instructions**
-ECT contains new code classes and icons. There are 2 ways to install depending on your preference
-- If you have ECT 1.27 or prior, I recommend removing it and doing a fresh install of the game. Version 2 and forward will not be compatible due to a new folder structure. 
+ECT contains new code classes and icons. There are 2 ways to install depending on your preference. [^1]
+[^1]: If you have ECT 1.27 or prior, I recommend removing it and doing a fresh install of the game. Version 2 and forward will not be compatible due to a new folder structure. 
 1. On a **vanilla** install, Copy the contents of `StandaloneFiles/VanillaVersion` into your Ravenshield directory. 
 	* Advanced users may prefer to edit their `Ravenshield.mod` file manually, to do so make sure to swap the default AI, pawn, and player controller class as well as add the actor package at the bottom. Refer to my `.mod` file to see the correct naming convention.
 	* This version will see fewer updates because the majority of development is spent on the other versions, as of 2.06 it has the same features except for those that are related to other mods, i.e. team using their lasers)	
@@ -27,26 +27,33 @@ ECT contains new code classes and icons. There are 2 ways to install depending o
 - Overhauls **room clearing**
   - The first 2 members into a room will attack the opposite corners and then shift their sights on the center room, and the remaining members will file into the room. When in infiltrate and recon team will crouch run into position, to avoid letting anyone on the other side hear them approaching. 
 - When your team moves out, there will be a ripple effect so that the rear team-member in the formation can hold their position for a split second longer then the previous men to avoid colliding and keep each other covered. 
-- Overhauls team speed and stance for when they are given an order to move out, throw a grenade, or interact with an object (see guide below)
+- Overhauls **team speed** and stance for when they are given an order to move out, throw a grenade, or interact with an object (see guide below)
 - Fast move order from your team, when holding shift you'll see "fast move" icon and your teammates will sprint (or crouch run) to the target location instead of walking (works even if the target location is out of sight). The Player's tone in the command is also different from the normal move command. 
 - Teammates give verbal cue when they are reloading (sometimes "weapons dry" and other times "reloading")
 - AI teams will now turn on their night vision when they are in low-light, and turn them off when back in light. 
  
 ## Rules of Engagement (RoE) guide:
 ### **Assault**
-- Violence of action - Engage all targets on sight, and will switch to loud primary weapon if carrying secondary 
-Movement - Walking-standing by default, sprint with fast-move modifier
+- Violence of action :
+Engage all targets on sight, and will switch to loud primary weapon if carrying secondary  
+- Movement :
+Walking-standing by default, sprint with fast-move modifier
 - Speed/Stance for AI teams between waypoints
-	- Blitz: Sprint
-	- Normal: Walk 
-	- Cautious: crouch-run
+	- Blitz : 
+Sprint
+	- Normal :
+Walk 
+	- Cautious:
+crouch-run
 ### **Infilitrate**
-- Violence of action - Engage all targets on sight, but only if weapon is silenced. If primary is not silenced, they will switch to secondary if that is silenced
-Movement - Crouch-walking by default, crouch-run with fast-move modifier
+- Violence of action :
+Engage all targets on sight, but only if weapon is silenced. If primary is not silenced, they will switch to secondary if that is silenced
+- Movement :
+Crouch-walking by default, crouch-run with fast-move modifier
 - Speed/Stance for AI teams between waypoints
-	- Blitz: Walk
-	- Normal: crouch-run 
-	- Cautious: crouch-run
+	- Blitz : Walk
+	- Normal : crouch-run 
+	- Cautious : crouch-run
 ### **Recon**
 - Violence of action - Team will not engage unless fired upon 
 Movement - Crouch-walking by default, crouch-run with fast-move modifier
@@ -58,10 +65,10 @@ Movement - Crouch-walking by default, crouch-run with fast-move modifier
 1. Jo92's WeaponPack (Recommended if you want the laser feature for the AI)
 2. Twi's Realistic Smoke mod (Recommended for realism and visuals)
 3. Jugulator's Goggle HUD v3 (Recommended for immersion and is very subtle, you'll barely notice it)
-	*How to switch on Goggles HUD on Supply Drops:
-	1. Add the texture file to the 'mods/EliteCounterTerror/assets/' folder 
+* How to switch on Goggles HUD on Supply Drops:
+	1. Add the texture file to the `mods/SupplyDrop/assets/` folder 
 	2. type `overlay GHUD_t.GG` into the console.
-	3. For the NVG overlay, type `nvgoverlay GHUD_T.nvg`
+	3. To enable the NVG overlay, type `nvgoverlay GHUD_T.nvg`
 4. Any rainbow skin pack, all of Apkin's releases are recommended  
 
 - Playing with any other mods is not recommended
