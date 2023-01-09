@@ -70,6 +70,10 @@ If you have any suggestions or any questions on compiling/modding please let me 
 - Github: I moved my guides and development tools to my [repository](https://github.com/R0NIN-6/Ravenshield_EliteCT) . Learn how to set-up an automated development enviroment for modding and much more!  
 
 ## **Change Log**
+### Version 2.061 Patch (1/9/2022)
+- A change to enemy surrendering I re-introduced in 2.05 seems to have caused a bad bug when you send the AI to arrest an enemy. Until I fix this and take a thorough look at the process, I'll leave the terrorist AI to vanilla. This was only on the Supply Drops version.
+- Also on the SD version, the 'frag and move' order for your team seems to have disapeared, most likely because Supply Drops uses a custom class to replace the Vanilla frag class with a new mesh and explosion effects. Again, I've disabled this change until a permanent solution is found.
+- The readme in the download has been reduced and this online readme has been created using markdown to format text. This changelog will also be kept in the online version only. 
 ### Version 2.06 Update (1/8/2022)
 - Made an improvement to my communication code and eliminated the need for the additional sound package. The other benefit to the new system is the female voices for any additional voice commands like "reloading" and the new "Move" command for the Fast Move are automatically applied.
 - Updated my code to make the Fast Move always reliable.

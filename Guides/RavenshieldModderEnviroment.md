@@ -27,4 +27,5 @@
 ## Set up automation Pipeline
 * This section assumes you have a project already set up that compiles successfully. This will help you set up an automated system for compiling, stripping
 1. Locate the [Ravenshield-CompileMove](Tools/../../Tools/Ravenshield-CompileMove.ps1) Powershell file in this repo.
-2.  
+   - Edit all variables to match your system path and project name
+2. Locate the batch file
