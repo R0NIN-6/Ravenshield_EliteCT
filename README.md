@@ -2,8 +2,9 @@
 
 ## Elite Counter-Terror
 ### **Elite Counter-Terror** is a modifcation for Tom Clancy's Rainbow Six 3 that alters how the squad artificial intelligence performs.  
-- Download it from [ModDb](https://www.moddb.com/mods/elite-counter-terror)  
+- Download the latest version from [ModDb](https://www.moddb.com/mods/elite-counter-terror)  
 - View the formatted [readme](Guides/ECT_readme.md)  
+- View the [change-log](Guides/ECT_readme.md#change-log)
 - Watch my gameplay [videos](https://www.youtube.com/@ac11b63) 
 ## Guides
 ### These guides can help you learn the Ravenshield modding enviroment
