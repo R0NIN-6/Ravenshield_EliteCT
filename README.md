@@ -5,14 +5,16 @@
 
 <a href="https://www.moddb.com/mods/elite-counter-terror/downloads/elite-counter-terror-v2" title="Download Elite Counter-Terror v2.06 - Mod DB" target="_blank"><img src="https://button.moddb.com/download/medium/242254.png" alt="Elite Counter-Terror v2.06" /></a>
 
-- View the formatted [readme](Guides/ECT_readme.md)  
-- View the [change-log](Guides/ECT_readme.md#change-log)
+- View the formatted [readme](ECT/ECT_readme.md)  
+- View the [change-log](ECT/ECT_Changelog.md)
 - Watch my gameplay [videos](https://www.youtube.com/@ac11b63)  
 
 ## Guides
 ### These guides can help you learn the Ravenshield modding environment
-- [Ravenshield IDE Set-up](Guides/RavenshieldModderEnviroment.md)  
-My Ravenshield Modder's IDE (Integrated Development Environment) guide will help you take advantage of modern tools to create a highly-efficient process for your work.  
+- [Ravenshield IDE Set-up](Guides/Ravenshield_IDE_Guide.md)  
+My Ravenshield IDE (Integrated Development Environment) guide will help you take advantage of modern tools to create an automated pipeline for your mods from a single interface, just like the latest versions of Unreal. 
+- [Ravenshield File Type Overview](Guides/Ravenshield_File_Types)  
+A run-down of the several different file extensions seen in the game and modding directory.  
 - [Importing new textures](Guides/RetextureGuide.md)  
 My Re-texture Guide to import custom textures into the game.
 - [Increase enemy count in Custom Missions](Guides/IncreaseEnemyCount.md)  
