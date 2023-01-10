@@ -32,7 +32,8 @@ if(Test-Path -PathType Leaf -Path $Compiled_U_File)
 #Execute the batch file you are using, has to be in 'code enviroment/system' and have your project name added within it (see guide)
 &'path to SDK\Code enviroment\system\compile_Custom.bat' 
 #Execute the strip batch file you are using, same as above
-&'path to SDK\Code enviroment\system\strip_Custom.bat' 
+#Only uncomment when you are releasing your mod for download
+#&'path to SDK\Code enviroment\system\strip_Custom.bat' 
 
 #If compile and strip was successful, the file will exist at the defined location and script can proceed
 if(Test-Path -PathType Leaf -Path $Compiled_U_File)
@@ -46,6 +47,7 @@ if(Test-Path -PathType Leaf -Path $Compiled_U_File)
     }
     Write-Output "Moving file to game directory"
     Move-Item -Path $Compiled_U_File -Destination $GameDir_File -Force 
+    Write-Output "Files copied, Game is ready to start"
     #If desired, uncomment to automatically start the game
     #& '<full system path to game directory\ravenshield\system\RavenShield.exe' 
 }
