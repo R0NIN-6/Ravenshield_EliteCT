@@ -13,8 +13,10 @@
 ### These guides can help you learn the Ravenshield modding environment
 - [Ravenshield IDE Set-up](Guides/Ravenshield_IDE_Guide.md)  
 My Ravenshield IDE (Integrated Development Environment) guide will help you take advantage of modern tools to create an automated pipeline for your mods from a single interface, just like the latest versions of Unreal. 
-- [Ravenshield File Type Overview](Guides/Ravenshield_File_Types)  
+- [Ravenshield File Type Overview](Guides/Ravenshield_File_Types.md)  
 A run-down of the several different file extensions seen in the game and modding directory.  
+- [File Import and Export Guide](Guides/Import_Export_Guide.md)
+Images, audio, and mesh objects all have to be formatted correctly to allow importing them, this guide will show you all you need for each asset type. 
 - [Importing new textures](Guides/RetextureGuide.md)  
 My Re-texture Guide to import custom textures into the game.
 - [Increase enemy count in Custom Missions](Guides/IncreaseEnemyCount.md)  
