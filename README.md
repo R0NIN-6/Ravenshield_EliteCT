@@ -7,7 +7,10 @@
 
 - View the formatted [readme](Guides/ECT_readme.md)  
 - View the [change-log](Guides/ECT_readme.md#change-log)
-- Watch my gameplay [videos](https://www.youtube.com/@ac11b63) 
+- Watch my gameplay [videos](https://www.youtube.com/@ac11b63)  
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/d-VkX0MD7yg?start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 ## Guides
 ### These guides can help you learn the Ravenshield modding environment
 - [Ravenshield IDE Set-up](Guides/RavenshieldModderEnviroment.md)  
