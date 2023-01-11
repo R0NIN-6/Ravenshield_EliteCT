@@ -38,8 +38,10 @@ In Progress: A Powershell script that can export all textures from the game in b
 - [Bulk edit Template files](Tools/BulkEdit-TemplateFiles.ps1)  
 In Progress: A Powershell script that can process bulk editing of template files for enemy and hostage types. 
 ## Templates
-### These files can be used as starting points for your custom classes or enemy configurations
-- Custom Actor
-- Custom AI
-- Enemy Template file
-- Hostage Template file
+### These files can be used as starting points for your code, enemy configurations, or documentation
+- [Custom Actor](Templates/CustomActor.uc)
+- [Custom AI](Templates/CustomAI.uc)
+- [Enemy Template file](Templates/EnemyTemplateFile.tpt)
+- [Hostage Template file](Templates/HostageTemplateFile.tph)
+- [Markdown Readme Template](Templates/MarkdownReadme.md)  
+It is standard practice to include a 'readme' text file with your mod, but trying to format simple text becomes unwieldy and gets worse as the file expands. You can go the additional step and create a formatted version and host it, I've also seen others created in HTML. I chose to create mine in Markdown because my change-log expanded too long and it seemed more efficient to keep that in an online version, and Github became the logical choice. I still keep the local version in the download but reduced it to the installation and feature guide only. The ease of formatting with Markdown also allows you to add headers and links to create a nice complement to your mod.
