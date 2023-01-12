@@ -8,15 +8,20 @@ by AC11b and the Ravenshield community
 ## **Stand-alone Install instructions**
 ECT contains new code classes and icons. There are 2 ways to install depending on your preference. [^1]
 [^1]: If you have ECT 1.27 or prior, I recommend removing it and doing a fresh install of the game. Version 2 and forward will not be compatible due to a new folder structure. 
-1. On a **vanilla** install, Copy the contents of `StandaloneFiles/VanillaVersion` into your Ravenshield directory. 
-	* Advanced users may prefer to edit their `Ravenshield.mod` file manually, to do so make sure to swap the default AI, pawn, and player controller class as well as add the actor package at the bottom. Refer to my `.mod` file to see the correct naming convention.
-	* This version will see fewer updates because the majority of development is spent on the other versions, as of 2.06 it has the same features except for those that are related to other mods, i.e. team using their lasers)	
-2. On a Ravenshield copy with the latest **Supply Drops (Oct 2020 + patch 1)** installed, copy the contents of `StandaloneFiles/SupplyDropsVersion` files into the Ravenshield directory. 
-    - You will see `ECT v2.x | SD by Twi` in the bottom right corner of the main menu if installed correctly. 
+1. On a **vanilla** install, Copy the contents of *`StandaloneFiles/VanillaVersion`* into your Ravenshield directory. 
+	* Advanced users may prefer to edit their **`Ravenshield.mod`** file manually, to do so make sure to swap the default AI, pawn, and player controller class as well as add the actor package at the bottom. Refer to my **`.mod`** file to see the correct naming convention.
+	* This version will see fewer updates because the majority of development is spent on the other versions, as of 2.06 it has the same features except for those that are related to other mods, i.e. team using their lasers). 
+2. On a Ravenshield copy with the latest **Supply Drops (Oct 2020 + patch 1)** installed, copy the contents of *`StandaloneFiles/SupplyDropsVersion`* files into the Ravenshield directory. 
+    - You will see `ECT v2.062 | SD by Twi` in the bottom right corner of the Supply Drop main menu if installed correctly. 
 	- I try to avoid putting anyting in the main directory but custom sound packs only work if they are there. 
     	- As of v2.06, no extra sound files are needed.
 	- If you want to edit your `SupplyDrops.mod` file manually, make sure you swap the default AI, pawn, and player controller class. You do not need to add the actor package at the bottom because it is compiled differently than the vanilla version.  
-### The only requirement is _OpenRVS 1.5_ by Twi regardless of the version you use.  
+    - To force the game to launch directly into the Supply Drops menu, open the file **`Ravensheild/System/OpenRVS.ini`** and enter `SupplyDrop` for the value of `ForceStartMod`, under the section titled `[OpenRVS.OpenMods]`.
+3. To validate the mod is active while in-game, open the console with the Tilde (``"`"``) key and look for the string :
+```
+Elite Counter-Terror v2.062 initialized | Missiontime is : <In-game mission Time>
+```
+   - Note: The only requirement is _OpenRVS 1.5_ by Twi regardless of the version you use.  
 # ECT Rainbow AI features: 
 - Based off Jose21Crisis's Rainbow AI Enhancer V2 (which is itself an upgrade of Malleus AI). The improved team FOV, single-shot firing, and team NVG animations in those mods are present here as well. 
 - Overhauls **Rules of Engagement**
@@ -30,7 +35,7 @@ ECT contains new code classes and icons. There are 2 ways to install depending o
 - Overhauls **team speed** and stance for when they are given an order to move out, throw a grenade, or interact with an object (see guide below)
 - Fast move order from your team, when holding shift you'll see "fast move" icon and your teammates will sprint (or crouch run) to the target location instead of walking (works even if the target location is out of sight). The Player's tone in the command is also different from the normal move command. 
 - Teammates give verbal cue when they are reloading (sometimes "weapons dry" and other times "reloading")
-- AI teams will now turn on their night vision when they are in low-light, and turn them off when back in light. 
+- AI teams will now turn on their night vision when they are in low-light, and turn them off when back in light. This is influenced by the local time in the misson and they will not use NVGs on day-time maps. 
  
 ## Rules of Engagement (RoE) guide:
 ### **Assault**
