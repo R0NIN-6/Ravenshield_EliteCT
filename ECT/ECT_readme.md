@@ -3,9 +3,12 @@
 # Rainbow Six 3 Single-Player Mod
 
 by AC11b and the Ravenshield community  
+
 <a href="https://www.moddb.com/mods/elite-counter-terror" title="View Elite Counter-Terror on Mod DB" target="_blank"><img src="https://button.moddb.com/popularity/medium/mods/35509.png" alt="Elite Counter-Terror" /></a>
 
-<span align="center"> <h1>SHOOT-MOVE-COMMUNICATE-KILL</h1> </span>
+<p align="center">
+SHOOT-MOVE-COMMUNICATE-KILL
+</p>
 
 ## **Install Instructions**
 
