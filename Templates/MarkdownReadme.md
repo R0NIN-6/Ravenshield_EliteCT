@@ -1,16 +1,43 @@
-# Mod Introduction
- - Author
- - Type of Mod
+# Mod Title version x.xx
 
-# Installation Guide
-## Prequisites  
+- Author and contributors
 
-## Installation steps  
+## Introduction
+
+- Purpose of Mod
+
+## Installation Guide  
+
+### Prerequisites  
+
+- Ensure the following add-ons/tools are installed
+  
+1. Example: OpenRVS since many single-player mods are dependant on it.
+  
+### Installation steps  
+
+1. Copy files from <> to <>
+2. Launch the game
+
+### Validate Install
+
+## Features / Guide
+
+| Feature Name | Description |
+| ----------- | ----------- |
+| Feature1 | Text |
+| Feature2 | Text |
 
 ## Mod Compatibility
 
-# Features
+- Tested to work with these mods
 
-# Change-log
+## Change-log
 
-# Contact
+- Version x.00 - Date
+
+  - List updates/bugs fixed
+
+## Contact  
+
+- Check my [page](enter_link_here) for more  

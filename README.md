@@ -1,16 +1,19 @@
-# Ravenshield Modding Repository 
+# Ravenshield Modding Repository
 
 ## Elite Counter-Terror
-### **Elite Counter-Terror** is a modification for Tom Clancy's Rainbow Six 3 that alters how the squad artificial intelligence performs.    
+
+### **Elite Counter-Terror** is a modification for Tom Clancy's Rainbow Six 3 that alters how the squad artificial intelligence performs.  
 
 <a href="https://www.moddb.com/mods/elite-counter-terror/downloads/elite-counter-terror-v2" title="Download Elite Counter-Terror v2.06 - Mod DB" target="_blank"><img src="https://button.moddb.com/download/medium/242254.png" alt="Elite Counter-Terror v2.06" /></a>
 
-- View the formatted [readme](ECT/ECT_readme.md)  
+- View the [readme](ECT/ECT_readme.md)  
 - View the [change-log](ECT/ECT_Changelog.md)
-- Watch my gameplay [videos](https://www.youtube.com/@ac11b63)  
+- Watch gameplay [videos](https://www.youtube.com/@ac11b63)  
 
 ## Guides
+
 ### These guides can help you learn the Ravenshield modding environment
+
 - [Ravenshield IDE Set-up](Guides/Ravenshield_IDE_Guide.md)  
 My Ravenshield IDE (Integrated Development Environment) guide will help you take advantage of modern tools to create an automated pipeline for your mods from a single interface, just like the latest versions of Unreal. 
 - [Ravenshield File Type Overview](Guides/Ravenshield_File_Types.md)  
@@ -25,8 +28,11 @@ I created this guide to modify an internal setting  and unlock the enemy count p
 I created this guide to help players change the enemy presets for any map to experiment with different and more challenging terrorist combinations, also applies to hostages. 
 - [Restore Ferry Boat map](Guides/MP_Multi2.ini)  
 Copy the file `MP_Multi2.ini` to `mods/athenasword/maps/`, the Ferry Boat map will now show up in the custom mission map list.
-## Development tools 
+
+## Development tools  
+
 ### These scripts were created to turbo-charge mod development and reduce errors.
+
 - [Compile and Move new code classes](Tools/Ravenshield-CompileMove.ps1)  
 Powershell script that works with the batch file in the repo to automate the process of compiling a new class, renaming it, moving to the right folder, and starting the game. After many hours doing this manually I can say it will save you a lot of time and pain if you want to start developing new classes. This will also ensure you don't make errors during this tedious process. Open the .ps1 and .bat files enter your project name into both files to configure properly. More info [here](Guides/RavenshieldModderEnviroment.md#set-up-automation-pipeline)
 - [Move Sound Files](Tools/Move-SoundFiles.ps1)  
@@ -37,8 +43,11 @@ Powershell script to quickly get EAX audio enabled in the game which will give a
 In Progress: A Powershell script that can export all textures from the game in bulk, convert to png, and then run each file through an AI-improvement algorithm called ESRGAN that runs on Python. 
 - [Bulk edit Template files](Tools/BulkEdit-TemplateFiles.ps1)  
 In Progress: A Powershell script that can process bulk editing of template files for enemy and hostage types. 
+
 ## Templates
+
 ### These files can be used as starting points for your code, enemy configurations, or documentation
+
 - [Custom Actor](Templates/CustomActor.uc)
 - [Custom AI](Templates/CustomAI.uc)
 - [Enemy Template file](Templates/EnemyTemplateFile.tpt)
