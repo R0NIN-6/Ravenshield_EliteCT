@@ -2,7 +2,7 @@
 ## Configuration Files
     Hint: Set the language in Notepad++ to 'INI File' to enable highlighted text in .INI, .INT, and .MOD files.
 1. *INI* 
-- A common format for configuration settings of a program or service. Sections are divided by headings, and listed in key-value pairs. Comments start with `;`. 
+- INI is a common format for configuration settings of a program or service. Sections are divided by headings, and listed in key-value pairs. Comments start with `;`. 
 - Here is what Ravenshield.ini, one of the main configuration files, looks like.   
 ![Ravenshield.ini](../Images/INI1.PNG)  
 
