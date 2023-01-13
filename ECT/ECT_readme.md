@@ -23,7 +23,7 @@ ECT contains new code classes and icons. There are 2 ways to install depending o
 [^3]: If you want to edit your `SupplyDrops.mod` file manually, make sure you swap the default AI, pawn, and player controller class. You do not need to add the actor package at the bottom because it is compiled differently than the vanilla version.  
 * To force the game to launch directly into the Supply Drops menu, open the file **`Ravensheild/System/OpenRVS.ini`** and enter `SupplyDrop` for the value of `ForceStartMod`, under the section titled `[OpenRVS.OpenMods]`.  
 
-3. To validate the mod is active while in-game, open the console with the Tilde (``"`"``) key and look for the string :  
+3. To validate the mod is active while in-game, open the console with the Tilde ``'`'`` key and look for the string :  
 
 ```
 Elite Counter-Terror v2.062 initialized | Missiontime is : <In-game mission Time>
@@ -90,3 +90,5 @@ Elite Counter-Terror v2.062 initialized | Missiontime is : <In-game mission Time
 ## Change Log
 
 * moved to a separate [document](ECT_Changelog.md)
+
+## Footnotes
