@@ -90,8 +90,6 @@ Elite Counter-Terror v2.062 initialized | Missiontime is : <In-game mission Time
 | _Youtube_ | Watch ECT in [action](https://www.youtube.com/@ac11b63) with other great user-made content on a series of my favorite maps |
 | _Github_ | I host this readme plus a collection of development resources on my [repository](https://github.com/R0NIN-6/Ravenshield_EliteCT) |
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/TrOgeqQS-SU?start=25" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
 ## Change Log
 
 * moved to a separate [document](ECT_Changelog.md)
