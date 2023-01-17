@@ -90,6 +90,16 @@ Elite Counter-Terror v2.062 initialized | Missiontime is : <In-game mission Time
 | _Youtube_ | Watch ECT in [action](https://www.youtube.com/@ac11b63) with other great user-made content on a series of my favorite maps |
 | _Github_ | I host this readme plus a collection of development resources on my [repository](https://github.com/R0NIN-6/Ravenshield_EliteCT) |
 
+* If you send me a bug report, please include the following to help me debug:  
+  * Issue description, screenshots/recording if possible
+  * Version # of ECT and if playing on Vanilla, Supply Drops, or Expansions
+  * Additional mods installed, listed or not listed in the compatibility list
+  * The map and mode where the issue started
+  * Additional info that is likely not necessary but may help:
+    * Windows version
+    * Steam or non-steam
+    * GPU type
+
 ## Change Log
 
 * moved to a separate [document](ECT_Changelog.md)

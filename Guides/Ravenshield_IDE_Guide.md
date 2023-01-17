@@ -21,7 +21,7 @@
 ### Notepad++
 
 - Use for searching within files and also a versatile text-editor. An important part of compiling new classes is knowing the inheritance of the object and how it is referenced. See the [section](#using-notepad-to-trace-object-inheritance) below for more.
-- Set the language of Unreal files to 'Java' or 'C' to enable highlighting. Also works for configuration files.
+- Set the language of Unreal files to `Java` or `C/C++` to enable highlighting. Also works for configuration files if you set to `INI File`.
 - Also allows you to edit and search within `.mod` , `.ini`, `.int`, `.tph`, and `.tpt` files, all of which are critical to the Ravenshield architecture. See my [guide](Ravenshield_File_Types.md) on File types.
 - VS Code can do almost everything NP++ can including searching but I always keep it in my toolkit because of it's speed and simplicity. 
 
@@ -78,11 +78,12 @@
 5. If you see the output `Files copied, Game is ready to start` in the terminal the script worked as planned and your file is now in the correct location. If it didn't compile, you'll see `Compile failed, check error message` and you can start debugging from the line given in the error output. 
 6. As you continue to run the script, it will automatically place your previous files in the backup location you defined with a time-stamp appended to the file-name. 
 
-## Using Notepad++ to Trace Object Inheritance
+## Using Notepad++ to Trace Object Inheritance and more
 
-1. While I do most of my code editing in VS Code, I prefer to do my searching from Notepad++ because it is lightweight and fast. 
+1. While I do most of my code editing in VS Code, I prefer to do my searching from Notepad++ because it is lightweight and fast. The interface of VS Code becomes cluttered with extensions.
 2. The tool I use most is "Find within files" located in the 'search' context menu. Here, I am pointing it the full 1.56 source code folder and searching for the variable `m_TeamLeader` because I want to see it where it is first defined, how it is referenced by other classes, and how I can use it in a new class. If your search field includes other file types you may use the `*.uc` filter to only search Unreal code files. You can can make the search as broad or granular as needed.
 ![Notepad++ Search Within Files Tool](Images/../../Images/Np++search.PNG)
 3. The search results will be displayed in the bottom pane. Click on any line to instantly go to that location in a file. 
 ![NotePad++ Search Results](../Images/Np%2B%2Bsearch2.PNG)
-4. This can be
+4. This method can be used for all text-based file types. If you want to quickly find a specific setting or value in a configuration file but don't remember the file name, do a "find within files", filter for `.ini` or `.int`, and search over the whole game directory to quickly pinpoint the location. 
+   - Avoid searching the game directory without a file-type filter of some sort, otherwise Notepad++ will search through DLLs and U packages. This is wasteful and time-consuming. 
