@@ -1,6 +1,6 @@
 # **Change Log**
 
-### Version 2.07 Update (1/12/2022)
+### Version 2.07 Update (1/17/2022)
 - This update took a thorough review of all room-clearing code and features many more improvements.
   - All the room calculations are done by the first member entering a room, and the next member in simply goes off what the person in front does, and so on down the line. This makes the new system more adaptable to differing room layouts and door positions.
     - Example: If the first member goes right, the second checks left but there is more space to go straight, but not very far due to the layout. The 3rd member's only option is to the same direction as the first member if there is space, but only halfway there. The 4th and last member (in the case of a full AI-led team) will not enter because that would put potential put them in the fatal funnel. The 4th member only enters in favorable rooms that have space to both directions.  
