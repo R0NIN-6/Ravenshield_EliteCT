@@ -20,10 +20,10 @@
 
 ### Notepad++
 
-- Use for searching within files and also a versatile text-editor. An important part of compiling new classes is knowing the inheritance of the object and how it is referenced. See the [section](#using-notepad-to-trace-object-inheritance) below for more.
+- Use for searching within files and also a versatile text-editor. An important part of compiling new classes is knowing the inheritance of the object and how it is referenced. See the [section](#power-searching-with-notepad) below for more.
 - Set the language of Unreal files to `Java` or `C/C++` to enable highlighting. Also works for configuration files if you set to `INI File`.
 - Also allows you to edit and search within `.mod` , `.ini`, `.int`, `.tph`, and `.tpt` files, all of which are critical to the Ravenshield architecture. See my [guide](Ravenshield_File_Types.md) on File types.
-- VS Code can do almost everything NP++ can including searching but I always keep it in my toolkit because of it's speed and simplicity. 
+- VS Code can do almost everything NP++ can including searching but I always keep it in my toolkit because of it's speed and simplicity, and searching is superior in NP++ in my opinion. 
 
 ### Unreal Editor
 
@@ -41,8 +41,8 @@
 
 ### Everything
 
-- A powerful searching tool, helpful for managing multiple game installs and projects.
-- Superior to Windows native searching in every way. 
+- A powerful searching tool, helpful for managing multiple game installs and projects. It can search for text within files but I primarily use it for searching file-names.  
+- Superior to Windows native searching in every way, see [section](#power-searching-with-everything) below for more info.
 
 ## Set up Ravenshield SDK
 
@@ -78,12 +78,25 @@
 5. If you see the output `Files copied, Game is ready to start` in the terminal the script worked as planned and your file is now in the correct location. If it didn't compile, you'll see `Compile failed, check error message` and you can start debugging from the line given in the error output. 
 6. As you continue to run the script, it will automatically place your previous files in the backup location you defined with a time-stamp appended to the file-name. 
 
-## Using Notepad++ to Trace Object Inheritance and more
+# Additional Tools
 
-1. While I do most of my code editing in VS Code, I prefer to do my searching from Notepad++ because it is lightweight and fast. The interface of VS Code becomes cluttered with extensions.
-2. The tool I use most is "Find within files" located in the 'search' context menu. Here, I am pointing it the full 1.56 source code folder and searching for the variable `m_TeamLeader` because I want to see it where it is first defined, how it is referenced by other classes, and how I can use it in a new class. If your search field includes other file types you may use the `*.uc` filter to only search Unreal code files. You can can make the search as broad or granular as needed.
+## Power Searching with **Notepad++**
+
+While I do most of my code editing in **VS Code**, I prefer to do my code searching from **Notepad++** because it is lightweight and fast. The interface of VS Code becomes cluttered with extensions.
+
+1. The tool I use most is "Find within files" located in the 'search' context menu. Here, I am pointing it the full 1.56 source code folder and searching for the variable `m_TeamLeader` because I want to see it where it is first defined, how it is referenced by other classes, and how I can use it in a new class. If your search field includes other file types you may use the `*.uc` filter to only search Unreal code files. You can can make the search as broad or granular as needed.
 ![Notepad++ Search Within Files Tool](Images/../../Images/Np++search.PNG)
-3. The search results will be displayed in the bottom pane. Click on any line to instantly go to that location in a file. 
+2. The search results will be displayed in the bottom pane. Click on any line to instantly go to that location in a file. 
 ![NotePad++ Search Results](../Images/Np%2B%2Bsearch2.PNG)
-4. This method can be used for all text-based file types. If you want to quickly find a specific setting or value in a configuration file but don't remember the file name, do a "find within files", filter for `.ini` or `.int`, and search over the whole game directory to quickly pinpoint the location. 
+3. This method can be used for all text-based file types. If you want to quickly find a specific setting or value in a configuration file but don't remember the file name, do a "find within files", filter for `.ini` or `.int` extensions, and search over the whole game directory to quickly pinpoint the location.  
    - Avoid searching the game directory without a file-type filter of some sort, otherwise Notepad++ will search through DLLs and U packages. This is wasteful and time-consuming. 
+
+## Power Searching with **Everything**
+
+How many times do you find yourself searching your machine for the same `.ini` or `.mod` files? How do you manage these when you have multiple game installs, and need to be able to easily see which directories have a specific mod? Or, the worst case happened and you copied a compiled file into the wrong location or with the wrong file-name, and need to be able to immediately find it. Windows Explorer has searching built-in, but I find it to be slow and has a poor interface for displaying results. Notepad++ as we know has great searching tools for *text*, but for *file-names* I use a different program. **Everything** is the perfect complement to your modding tools and will save you time. This also falls in line with my principle of keeping work streams in separate programs as a means of checking myself and using the right tool for the job.
+
+The interface of Everything is very straightforward and requires no configuration. Enter anything in the search field and by default it will search the entire C: drive for matching `File Names`.
+
+- The program only searches **within** files if you specify that in the Advanced Search tool, and we are leaving it just the way it is.  
+
+You can change the file type in the options drop-down, but since it may not detect Ravenshield or Unreal files correctly, I'd rather just enter it explicitly in the search field. You can enter as many terms as needed in the search field, for example if I want to find all `.uc` files with `ECT` in the file name I simply enter `ECT .uc`. Everything will list all matches and conveniently show the full location and the date it was last modified. Additionally, you can right-click on a file and get the same context-menu as in Windows Explorer, so you can select `Edit in Notepad++` or `Open with` any program.  
