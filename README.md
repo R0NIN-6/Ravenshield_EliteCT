@@ -20,6 +20,8 @@ My Ravenshield IDE (Integrated Development Environment) guide will help you take
 A run-down of the several different file extensions seen in the game and modding directory.  
 - [File Import and Export Guide](Guides/Import_Export_Guide.md)  
 Images, audio, and mesh objects all have to be formatted correctly to allow importing them, this guide will show you all you need for each asset type. 
+- [Testing and Debugging Guide](Guides/Debugging.md)  
+Establishing a system for testing and debugging is critical for a successful mod, in this guide I share the techniques I developed in my own environment using Notepad++ and simple Regular Expressions.  
 - [Importing new textures](Guides/RetextureGuide.md)  
 My Re-texture Guide to import custom textures into the game.
 - [Increase enemy count in Custom Missions](Guides/IncreaseEnemyCount.md)  
