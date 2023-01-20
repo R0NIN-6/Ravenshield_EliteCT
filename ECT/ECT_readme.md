@@ -1,4 +1,4 @@
-# **Elite Counter-Terror 2.07**
+# **Elite Counter-Terror 2.071**
 
 # Rainbow Six 3 Single-Player Mod
 
@@ -21,7 +21,7 @@ ECT contains new code classes and icons. There are 2 ways to install depending o
 * This version will see fewer updates because the majority of development is spent on the other versions, as of 2.06 it has the same features except for those that are related to other mods, i.e. team using their lasers).  
 
 2. On a Ravenshield copy with the latest **Supply Drops (Oct 2020 + patch 1)** installed, copy the contents of *`StandaloneFiles/SupplyDropsVersion`* files into the Ravenshield directory.[^3] 
-* You will see `ECT v2.07 | SD by Twi` in the bottom right corner of the Supply Drop main menu if installed correctly. 
+* You will see `ECT v2.071 | SD by Twi` in the bottom right corner of the Supply Drop main menu if installed correctly. 
 
 [^3]: If you want to edit your `SupplyDrops.mod` file manually, make sure you swap the default AI, pawn, and player controller class. You do not need to add the actor package at the bottom because it is compiled differently than the vanilla version.  
 * To force the game to launch directly into the Supply Drops menu, open the file **`Ravensheild/System/OpenRVS.ini`** and enter `SupplyDrop` for the value of `ForceStartMod`, under the section titled `[OpenRVS.OpenMods]`.  
@@ -29,7 +29,7 @@ ECT contains new code classes and icons. There are 2 ways to install depending o
 3. To validate the mod is active while in-game, open the console with the Tilde ``'`'`` key and look for the string :  
 
 ```
-Elite Counter-Terror v2.07 initialized | Missiontime is : <In-game mission Time>
+Elite Counter-Terror v2.071 initialized | Missiontime is : <In-game mission Time>
 ```
 
 [^4]: The only requirement is _OpenRVS 1.5_ by Twi regardless of the version you use.  

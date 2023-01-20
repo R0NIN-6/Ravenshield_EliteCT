@@ -1,5 +1,14 @@
 # **Change Log**
 
+### Version 2.071 Patch (1/19/2022)
+
+- Fixed an error with the second member in a player led team stopping at the doorway.
+- AI-led teams will no longer stop to engage when crouch-walking or walking. This was meant to be realistic but in watching the AI in spectate I see that it is not fluid. They will only slow down to engage if they are sprinting (blitz in Assault) or crouch-running (blitz in Recon or Infiltrate). This also brings an operative's overall skill more into play.
+- AI will will wait to reload if the teammate in front of them is reloading.
+- Lowered threshold for AI Team Leader switching on NVGs. 
+- Tested and improved Room Clearing code on Oil Refinery and Warehouse. 
+
+
 ### Version 2.07 Update (1/17/2022)
 - This update took a thorough review of all room-clearing code and features many more improvements.
   - All the room calculations are done by the first member entering a room, and the next member in simply goes off what the person in front does, and so on down the line. This makes the new system more adaptable to differing room layouts and door positions.
