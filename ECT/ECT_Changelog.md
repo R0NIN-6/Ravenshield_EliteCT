@@ -2,7 +2,7 @@
 
 ### Version 2.072 Patch (1/23/2022)
 
-- The goal of this small update was to optimize the code by eliminating any calls to the "Tick" function. At a high-level, this is a global function that is getting called every 1/60th of a second. I believe eliminating any calls to it from my code classes will maximize efficiency and reduce any overhead.  
+- The only purpose of this small update was to optimize the code by eliminating any calls to the "Tick" function. At a high-level, this is a global function that is getting called every 1/60th of a second. I believe eliminating any calls to it from my code classes will maximize efficiency and reduce any overhead.  
 
 ### Version 2.071 Patch (1/19/2022)
 
