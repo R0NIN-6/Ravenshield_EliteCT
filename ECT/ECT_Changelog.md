@@ -6,7 +6,7 @@
 
 ### Version 2.071 Patch (1/19/2022)
 
-- Fixed an error with the second member in a player led team stopping at the doorway.
+- Fixed an error with the second member in a human-led team stopping at the doorway.
 - AI-led teams will no longer stop to engage when crouch-walking or walking. This was meant to be realistic but in watching the AI in spectate I see that it is not fluid. They will only slow down to engage if they are sprinting (blitz in Assault) or crouch-running (blitz in Recon or Infiltrate). This also brings an operative's overall skill more into play.
 - AI will will wait to reload if the teammate in front of them is reloading.
 - Lowered threshold for AI Team Leader switching on NVGs. 
