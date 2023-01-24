@@ -14,6 +14,12 @@ Breaking down the above statement:
 ```
 This message is from: MyActor01
 ```
+#### Advanced Strings
+
+You can expand the concept from the example above and use multiple variables in the same line, to minimize code and clutter on the screen. This example will print the player's pawn class, state, and weapon type.
+```c++
+R6PlayerController(GetCanvas().Viewport.Actor).ClientMessage(" This message is from: " $self);
+```
 
 Repeat this process until the code is as refined as you wish, and then prepare for your next upload. But first, you'll have to remove all those on-screen messages and compile again. This introduces the next dilemna; how can you quickly find all your `ClientMessage` statements in a class that is potentially 1000's of lines, comment them out, but keep them intact so that I can easily find them if I need to go back to debugging? There are many ways one could programmatically do this, but I settled on using Regular Expressions in my search.  
 

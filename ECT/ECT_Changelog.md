@@ -1,15 +1,19 @@
 # **Change Log**
 
+### Version 2.072 Patch (1/23/2022)
+
+- The goal of this small update was to optimize the code by eliminating any calls to the "Tick" function. At a high-level, this is a global function that is getting called every 1/60th of a second. I believe eliminating any calls to it from my code classes will maximize efficiency and reduce any overhead.  
+
 ### Version 2.071 Patch (1/19/2022)
 
 - Fixed an error with the second member in a player led team stopping at the doorway.
 - AI-led teams will no longer stop to engage when crouch-walking or walking. This was meant to be realistic but in watching the AI in spectate I see that it is not fluid. They will only slow down to engage if they are sprinting (blitz in Assault) or crouch-running (blitz in Recon or Infiltrate). This also brings an operative's overall skill more into play.
 - AI will will wait to reload if the teammate in front of them is reloading.
 - Lowered threshold for AI Team Leader switching on NVGs. 
-- Tested and improved Room Clearing code on Oil Refinery and Warehouse. 
-
+- Tested and improved Room Clearing code on Oil Refinery and Warehouse.  
 
 ### Version 2.07 Update (1/17/2022)
+
 - This update took a thorough review of all room-clearing code and features many more improvements.
   - All the room calculations are done by the first member entering a room, and the next member in simply goes off what the person in front does, and so on down the line. This makes the new system more adaptable to differing room layouts and door positions.
     - Example: If the first member goes right, the second checks left but there is more space to go straight, but not very far due to the layout. The 3rd member's only option is to the same direction as the first member if there is space, but only halfway there. The 4th and last member (in the case of a full AI-led team) will not enter because that would put potential put them in the fatal funnel. The 4th member only enters in favorable rooms that have space to both directions.  
@@ -18,13 +22,18 @@
 - Tested and refined by observing AI-led teams in Spectator mode on as many maps as possible. The priority is to ensure they never get stuck or de-synchronized in a room-clear. This will be a continuous effort.
 
 ### Version 2.062 Patch (1/12/2022)
+
 - I fixed the repeating "Reloading" verbal cue for AI teammates carrying Pump Shotguns. Previously, when an AI teammate was carrying a pump shotgun and reloading, they would repeat the "weapons dry/reloading" with each loaded shell. They will now only call it out at the start of reloading, and if there are enemies around they may not say it all.
-- AI-led teams were leaving their NVGs on during the day if they stepped into a dark shadow. To workaround this, I programmed the AI to check the mission time from the localization file at the start of the map, and use that to determine if it is daytime. If it is daytime, they will not use NVGs at all until I found a way to dynamically check for shadows. If it is night or pre-dawn (Before 0700 or after 1900), they will check at the beginning of a new patrol route and if they are in very low light, they'll swith them on and then switch them back on in light. I tested it on the Nuke Reactor map and it works as intended, they turned them on when they went into the pitch-black tunnel and then back off when they came into a lightened area. I will continue to refine it as I test on maps with a contrast of light and dark areas. The map must have a "date/time" string in the localization file.
+- AI-led teams were leaving their NVGs on during the day if they stepped into a dark shadow. To workaround this, I programmed the AI to check the mission time from the localization file at the start of the map, and use that to determine if it is daytime. If it is daytime, they will not use NVGs at all until I found a way to dynamically check for shadows. If it is night or pre-dawn (Before 0700 or after 1900), they will check at the beginning of a new patrol route and if they are in very low light, they'll switch them on and then switch them back on in light. I tested it on the Nuke Reactor map and it works as intended, they turned them on when they went into the pitch-black tunnel and then back off when they came into a lightened area. I will continue to refine it as I test on maps with a contrast of light and dark areas. The map must have a "date/time" string in the localization file.
+
 ### Version 2.061 Patch (1/9/2022)
+
 - A change to enemy surrendering I re-introduced in 2.05 seems to have caused enemies to die suddenly when you send the AI to arrest them. Until I fix this and take a thorough look at the process, I'll leave the terrorist AI to vanilla. This was only on the Supply Drops version.
 - Also on the SD version, the 'frag and move' order for your team seems to have disappeared, most likely because Supply Drops uses a custom class to replace the Vanilla frag class with a new mesh and explosion effects. Again, I've disabled this change until a permanent solution is found.
 - The readme in the download has been reduced and this online readme has been created using markdown to format text. This changelog will be kept in the online version only.
+
 ### Version 2.06 Update (1/8/2022)
+
 - Made an improvement to my communication code and eliminated the need for the additional sound package. The other benefit to the new system is the female voices for any additional voice commands like "reloading" and the new "Move" command for the Fast Move are automatically applied.
 - Updated my code to make the Fast Move always reliable.
 - Added a different move voice command for Fast Move, it is a more aggressive tone.

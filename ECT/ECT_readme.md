@@ -56,7 +56,7 @@ Elite Counter-Terror v2.071 initialized | Missiontime is : <In-game mission Time
 | ----------- | ----------- |----------- |
 | _Assault_ | Engage all targets on sight, and will switch to loud primary weapon if carrying secondary  |Walking-standing by default, sprint with fast-move modifier|
 | _Infiltrate_ | Engage all targets on sight, but only if weapon is silenced. If primary is not silenced, they will switch to secondary if that is silenced |Crouch-walking by default, crouch-run with fast-move modifier|
-| _Recon_ | Team will not engage unless fired upon  |Crouch-walking by default, crouch-run with fast-move modifier|
+| _Recon_ | Team will not engage unless fired upon and will not clear rooms  |Crouch-walking by default, crouch-run with fast-move modifier|
 
 ## Movement for AI-Led Teams
 
