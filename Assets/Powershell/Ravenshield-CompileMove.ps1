@@ -60,6 +60,5 @@ else
     Write-Host "Compile failed, check error message" -ForegroundColor Red
 }
 
-#Finalize script by printing the elapses time in seconds and ticks 
 $elapsedTime = $(get-date) - $StartTime
 write-host "Script completed in" $elapsedTime.TotalSeconds "seconds."

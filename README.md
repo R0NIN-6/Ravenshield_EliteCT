@@ -5,10 +5,38 @@
 ### **Elite Counter-Terror** is a modification for Tom Clancy's Rainbow Six 3 that alters how the squad artificial intelligence performs.  
 
 <a href="https://www.moddb.com/mods/elite-counter-terror/downloads/elite-counter-terror-v2" title="Download Elite Counter-Terror v2.06 - Mod DB" target="_blank"><img src="https://button.moddb.com/download/medium/242254.png" alt="Elite Counter-Terror v2.06" /></a>
-
+ <!-- Link to ECT Docs Home when it's ready -->
 - View the [readme](ECT/ECT_readme.md)  
 - View the [change-log](ECT/ECT_Changelog.md)
 - Watch gameplay [videos](https://www.youtube.com/@ac11b63)  
+
+ <!-- Add Table of Contents here -->
+
+# Table of Contents
+- [1.0 Guides](#guides)
+   - [1.1 The Unofficial Ravenshield IDE](Guides/Ravenshield_IDE_Guide.md)
+   - [1.2 File Type Overview](Guides/Ravenshield_File_Types.md)
+   - [1.3 File Import and Export](Guides/Import_Export_Guide.md) 
+   - [1.4 Testing and Debugging](Guides/Debugging.md) 
+   - [1.5 Importing new textures](Guides/RetextureGuide.md) 
+   - [1.6 Increase enemy count in Custom Missions](Guides/IncreaseEnemyCount.md)
+   - [1.7 Editing Enemy and Hostage Template Files](Guides/TemplateEditing.md)
+   - [1.8 Restore Ferry Boat map](Guides/MP_Multi2.ini)  
+- [2.0 Developer Resources](#development-tools)
+   - [2.1 Compile Classes with Powershell](Tools/Ravenshield-CompileMove.ps1)
+   - [2.1 Move Sound Files](Tools/Move-SoundFiles.ps1)
+   - [2.3 Enable EAX](Tools/SetRegistryEAX.ps1)
+   - [2.4 ]
+- [3.0 Templates](#templates)
+   - [3.1 Custom Actor](Templates/CustomActor.uc)
+   - [3.2 Custom AI](Templates/CustomAI.uc)
+   - [3.3 Enemy Template file](Templates/EnemyTemplateFile.tpt)
+   - [3.4 Hostage Template file](Templates/HostageTemplateFile.tph)
+   - [3.5 Markdown Readme Template](Templates/MarkdownReadme.md)
+- [4.0 Elite Counter-Terror](#elite-counter-terror)
+  - [4.1 Readme](ECT/ECT_readme.md) 
+  - [4.2 Change-log](ECT/ECT_Changelog.md) 
+  <!-- Add more as you expand the documentation for ECT ---> 
 
 ## Guides
 
