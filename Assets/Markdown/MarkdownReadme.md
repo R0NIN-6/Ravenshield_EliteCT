@@ -22,7 +22,7 @@
   
 ### Installation steps  
 
-1. Copy files from <> to <>
+1. Copy files from `source` to `destination`
 2. Launch the game
 
 ### Validate Install
@@ -40,10 +40,13 @@
 
 ## Change-log
 <!--- If this gets too long, consider moving to a separate file and linking --->
+- Version x.01 - Date
+
+  - List updates/bugs fixed
 - Version x.00 - Date
 
   - List updates/bugs fixed
-
+  
 ## Contact  
 <!--- Use the syntax [Text to display](URL) to add links  --->
 - Check my [page]() for more  

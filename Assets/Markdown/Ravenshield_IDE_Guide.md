@@ -25,7 +25,7 @@
 4. Save this workspace by going to `File->Save Workspace As` and save the workspace file to any location. You can now open it in future sessions (if it doesn't open automatically) by going to `File->Open workspace from file`.
 5. The extension works by indexing the source code folder and detecting the context of your code, and using that as a library for you when you create new classes and code. 
 - For example, if you start to type an object you will see *intellisense-like* prediction assistance with the dot operator, and will give you an error cue if you try to use an object that is not available to that class. Here, `WT_` is the prefix for the values in an enumerator for the weapon type and you can see the different values that pop up. The extension makes this available because it understands the context of this function and what objects and properties it inherits. 
-![Dot operator prediction example](images/../../Images/UnrealScriptExt.png)
+![Dot operator prediction example](../Images/UnrealScriptExt.png)
 - It also allows you to "view definition" for ALMOST any class or function you come across by taking you to the code file where the object is defined. I say almost because I have seen cases where it doesn't detect the proper location.
 - The error messaging from the extension is far from perfect so always try to compile first from the SDK and always go by the error from the SDK output. The compiler error messaging on the other hand is surprisingly very accurate, it will almost always point you exactly to the code that needs fixing. The extension is just there for guidance and has no effect whatsoever on the compiler.
 - Sample Workspace Layout
@@ -34,9 +34,9 @@
 ## Set up automation Pipeline
 
 * This section assumes you have a project already set up that compiles successfully. This will help you set up an automated system for compiling and moving your files to the game directory
-1. Locate the [Ravenshield-CompileMove.ps1](Tools/../../Tools/Ravenshield-CompileMove.ps1) Powershell file in this repo.
+1. Locate the [Ravenshield-CompileMove.ps1](Assets/Powershell/Ravenshield-CompileMove.ps1) Powershell file in this repo.
    - Edit all variables to match your system path and project name
-2. Locate the batch file [Custom_compile.bat](Tools/../../Tools/compile_Custom.bat) and enter your project name where you see `<EnterProjectHere>` on lines 8 and 12. 
+2. Locate the batch file [Custom_compile.bat](Assets/Powershell/compile_Custom.bat) and enter your project name where you see `<EnterProjectHere>` on lines 8 and 12. 
 3. 'Stripping' the file of source code is usually only necessary when you are releasing your mod for download, for the simple fact that you may need to peek inside at the source code if you lose track of which version of the file you are testing. I'll do a separate section on how to strip later on because it can cause major issues if you do it incorrectly. For this guide, we'll leave it commented out in the script and move on.
 4. Check your variables again, and then run the script from Visual Studio Code. If you run from the Powershell ISE, it will work fine but usually it will open the batch file in a separate terminal, and then close as soon as it's done. This prevents you from seeing if it compiled successfully and what the errors are. From VS Code you won't have this issue.
 5. If you see the output `Files copied, Game is ready to start` in the terminal the script worked as planned and your file is now in the correct location. If it didn't compile, you'll see `Compile failed, check error message` and you can start debugging from the line given in the error output. 

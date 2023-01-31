@@ -38,4 +38,4 @@ Static Mesh package.
 A Compiled UnrealScript package. 
 8. *UC* :
 Unreal script source code file.
-- See my guide [Exporting and Importing Assets](Guides/../Import/Export%20Guide.md) for more info on how to turn your files into Unreal packages. 
+- See my guide [Exporting and Importing Assets](Assets/Markdown/../../Import_Export_Guide.md) for more info on how to turn your files into Unreal packages. 

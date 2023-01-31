@@ -27,8 +27,8 @@ Repeat this process until the code is as refined as you wish, and then prepare f
 I use Notepad++ for searching through files because as I've mentioned elsewhere the interface is superior to VS Code's built-in searching mechanism. Not only that, it's a nice to have a separation of tools so that I am not trying to do too much from VS Code and potentially making an edit in the wrong location. 
 1. Open your `.uc` file in Notepad++ with syntax highlighting on (set language to `java` or `C`), or files if your mod contains multiple classes. Close any other files in this window of Notepad++.
 2. Open the search tool, and in the bottom left check `Regular Expression` in the search mode, as seen below.
-![Notepad++ Search with Regular Expressions](../Images/NP%2B%2BRegEx.PNG)
-3. The value in the search field is:
+![Notepad++ Search with Regular Expressions](..\Images\NPRegEx.PNG)
+1. The value in the search field is:
 ```
 ^\s*R6PlayerController\(GetCanvas\(\).Viewport.Actor\).ClientMessage\(
 ```
@@ -47,7 +47,7 @@ As soon as a task becomes repeated and the steps are consistent, it is possible 
 Example:
 1. Write 1 script for enabling messages and another corresponding script for disabling. Make sure both have the same format for date strings, such as `MMDDYY`. Don't add time because that would make every string unique and defeat the purpose. 
 2. Save a backup copy of any file you intend to edit in a location outside of the SDK environment. Add "backup" and a date string to the file-name if necessary.  
-   * Or, of course, build this into the start of your script with just a few lines. See [My Compile Script](../Tools/Ravenshield-CompileMove.ps1) for an example on how to move files to a backup directory. 
+   * Or, of course, build this into the start of your script with just a few lines. See [My Compile Script](/Assets/Powershell/Ravenshield-CompileMove.ps1) for an example on how to move files to a backup directory. 
 3. Add an output of all found lines and confirmation prompt before replacing. You may even add a password for extra protection!
 4. Run the disable messaging script, and the replaced statements will have the following syntax (note the coloring)
 

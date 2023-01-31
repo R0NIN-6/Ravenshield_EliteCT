@@ -11,13 +11,14 @@
 ## Instructions:
 1. Export whatever texture from 'Texture Browser' in UE as .tga image.
 2. Edit the photo however you wish, and export to the new NewOperativeFolder as .tga (do not check *RLE* compression if using GIMP, for photoshop I believe you need to select 32-bit.)
+    * See [this page](Import_Export_Guide.md) for a more detailed guide on formatting images correctly in GIMP.
 3. Back in UE, from TB go to file>new and enter Package name as `xxx_T` and name whatever you want. (keep track of what your naming in Unreal Editor vs later when we get to the SDK. Use this text file if you need to)
 4. You should have a red box that says 'Shader' and name from above, and also `(0x0)`. 
 5. Now go to File>import and select your .tga file and click 'ok' in the next menu. You'll see it now next to the red box. 
 6. Save IMMEDIATELY, you can leave it in the textures folder. After saving, delete the red box and save again. If you try deleting the red box BEFORE saving you will likely get strange errors and UE will crash. 
 7. You can now close UE. Copy the `xxx_T.utx` file into the 'textures' folder located in the 'code enviroment' in the main SDK2 folder.  
 8. Open up the Map Build Converter (it's `Retard_Maps.exe`)
-9. Select 'Browse for the File' right next to 'convert', select the file that you just placed in the 'code enviroment'. Click convert, look for success message, and close the program. 
+9.  Select 'Browse for the File' right next to 'convert', select the file that you just placed in the 'code enviroment'. Click convert, look for success message, and close the program. 
 10. Run the SDK2 toolbelt (blue command prompt), type `156` and press enter. This sets the program to version 1.56, which is necessary.
 11. Now type 'new' and you'll be prompted to enter a name for your project and the name of it's first class. This names should correspond to the 'package' and 'name' from what you did earlier in UE, but not be the same.
 12. Now type 'open' and then enter the project name from the previous step to open the folder. You could also just open the folder from your code enviroment. Either way, you will have a .uc file which you can now open and edit with a text editor.

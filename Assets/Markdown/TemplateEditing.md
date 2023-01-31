@@ -1,19 +1,19 @@
 # Customizing Enemy Template Files
  The terrorists you see in a map are controlled by template files (extension '.tpt') that contain different classes, weapons, and gear with a corresponding percentage. Let’s take a look at the ‘template’ folder in the main Ravenshield directory. It should look like this:
 
-![Template File 1](Images/../../Images/Tpt1.jpg)
+![Template File 1](../Images/Tpt1.jpg)
 
-![Template File 2](Images/../../Images/Tpt2.jpg)
+![Template File 2](../Images/Tpt2.jpg)
 
 - You’ll notice each mission has several different files, such as ‘Alpines -1’ and ‘Alpines 10’. These file-names are associated with different spawn points inside the map, to generate a random assortment of different types of terrorists. One file may be tied to a Sniper spawn point, another may be a campaign character like Gospic or Gutierrez. You can edit the contents within these files, but you cannot add any new ones without editing the map file. The Unreal Editor that comes with the game has a Template file builder, but I found it to be incomplete and you’ll save time if just get used to editing them as text files. In the second image you'll see filenames that start with ‘MP –‘, these are for Terrorist Hunt, Hostage Rescue, and Lone Wolf. While campaign missions have several template files, custom missions only use 1 per map. In addition to the campaign custom-missions, there are several multiplayer maps that you can select as well. Let’s take a look at ‘MP-Presidio’, a small map where you can easily test your custom .tpt files. This is what mine looks like when I open with a text editor, this one is just for the tutorial so yours will be different.
 
-![Template File 3](Images/../../Images/Tpt3.jpg)
+![Template File 3](../Images/Tpt3.jpg)
 
 - Starting from the top, you’ll see ‘Version=4’ or ‘Version=5’, and then ‘Type=Terrorist’. Always leave these as they are. Where you see ‘NbOfPawn=’ is where you can start editing. You can enter however many number of tangos you wish, as long as their percentages (numbers at the beginning of each line with the character type) add up to 100. Now take look at the name of the terrorist type. 'Merc' or ‘R6Chracters’ is the parent-class and then is followed by a period and the specific type, such as 'IWMerc1'. The easiest way to view what they look like is to keep a reference image, like the ones I made below.
 ## Mercernary Reference Images
-![Reference Image 1](Images/../../Images/ref1.jpg)
+![Reference Image 1](../Images/ref1.jpg)
 
-![Reference Image 2](Images/../../Images/ref2.jpg)
+![Reference Image 2](../Images/ref2.jpg)
 
 - Moving on to the weapon section, the same rules apply: enter the number of weapons, and then give them a corresponding percentage of how likely you want them to appear. If you want to change the weapons listed, again just pay attention to what you are entering. The third weapon listed is the ACR from Twi's Supply Drop, I recommend using Unreal Package Tool to find the class names. For grenades, you can give them a flash, gas, or frag, or just use ‘None.None’ but make sure to count it as an object. The next section is terrorist’s personality. Again, they must add up to 100. They all function pretty much as expected and control their tendency to run when they see a threat. The next section is their skill attributes, increasing them is always fun. ‘RndVariation’ is the range of variation to be added/subtracted to each skill. These fields can be any number from 0-100, and setting them all to 100 is perfectly fine. Of course, if you set ‘RndVariation’ to 100, then their skills will then be anywhere from 0-100.
 
