@@ -52,9 +52,9 @@ The following supplemental tools can assist in modding and overall development.
 
 While I do most of my code editing in **VS Code**, I prefer to do my code searching from **Notepad++** because it is lightweight and fast. The interface of VS Code becomes cluttered with extensions.
 
-1. The tool I use most is "Find within files" located in the 'search' context menu. Here, I am pointing it the full 1.56 source code folder and searching for the variable `m_TeamLeader` because I want to see it where it is first defined, how it is referenced by other classes, and how I can use it in a new class. If your search field includes other file types you may use the `*.uc` filter to only search Unreal code files. You can can make the search as broad or granular as needed.
+1. The tool I use most is "Find within files" located in the 'search' context menu. Here, I am pointing it the full 1.56 source code folder and searching for the variable `m_TeamLeader` because I want to see it where it is first defined, how it is referenced by other classes, and how I can use it in a new class. If your search field includes other file types you may use the `*.uc` filter to only search Unreal code files. You can can make the search as broad or granular as needed.  
 ![Notepad++ Search Within Files Tool](../Images/Npsearch.PNG)
-1. The search results will be displayed in the bottom pane. Click on any line to instantly open that location in a file. 
+1. The search results will be displayed in the bottom pane. Click on any line to instantly open that location in a file.  
 ![NotePad++ Search Results](../Images/Npsearch2.PNG)
 1. This method can be used for all text-based file types. If you want to quickly find a specific setting or value in a configuration file but don't remember the file name, do a "find within files", filter for `.ini` or `.int` extensions, and search over the whole game directory to quickly pinpoint the location.  
    - Avoid searching the game directory without a file-type filter of some sort, otherwise Notepad++ will search through DLLs and U packages. This is wasteful and time-consuming. 

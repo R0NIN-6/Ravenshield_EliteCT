@@ -26,16 +26,16 @@ Repeat this process until the code is as refined as you wish, and then prepare f
 ## Searching For Patterns with Regular Expressions (RegEx)
 I use Notepad++ for searching through files because as I've mentioned elsewhere the interface is superior to VS Code's built-in searching mechanism. Not only that, it's a nice to have a separation of tools so that I am not trying to do too much from VS Code and potentially making an edit in the wrong location. 
 1. Open your `.uc` file in Notepad++ with syntax highlighting on (set language to `java` or `C`), or files if your mod contains multiple classes. Close any other files in this window of Notepad++.
-2. Open the search tool, and in the bottom left check `Regular Expression` in the search mode, as seen below.
-![Notepad++ Search with Regular Expressions](..\Images\NPRegEx.PNG)
-1. The value in the search field is:
+2. Open the search tool, and in the bottom left check `Regular Expression` in the search mode, as seen below.  
+![Notepad++ Search with Regular Expressions](..\Images\NPRegEx.PNG)  
+3. The value in the search field is:
 ```
 ^\s*R6PlayerController\(GetCanvas\(\).Viewport.Actor\).ClientMessage\(
 ```
 - Enter it exactly as shown, every symbol has a purpose in Regular Expression syntax. Breaking down each component:  
     * `^\s*` signifies **zero or more non-whitespace characters** in RegEx. This ensures that the line will be found regardless of how many spaces or indentations lie before the statement. 
     - The string `R6PlayerController\(GetCanvas\(\).Viewport.Actor\).ClientMessage\(` corresponds to the statement in code. The opening and closing Parenthesis symbols have a meaning in RegEx, so just like you do in any code language you must **Escape** that character with a `\` so that is treated literally. 
-1. Before any replacing takes place, use this search string or your own and confirm it is finding every line you need by selecting **Find All in Current Document** in the search window. This will output every line that matches in a very convenient pane at the bottom. 
+4. Before any replacing takes place, use this search string or your own and confirm it is finding every line you need by selecting **Find All in Current Document** in the search window. This will output every line that matches in a very convenient pane at the bottom. 
 
 ## Find and Replace 
 
