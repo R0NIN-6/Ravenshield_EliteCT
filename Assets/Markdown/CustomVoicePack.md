@@ -23,10 +23,10 @@ This section assumes you have created an entire package using Murf or by recordi
 2. Open Audacity, and without opening an audio file go to **Tools->Macro Manager**.
 3. Select New, enter a name, and create a Macro that can apply a radio effect on a group of files. Using this video for reference, you'll need a Filter Curve EQ, High-Pass Filter, Distortion, and normalize command. The final command should be Export as Wav else they won't be saved. 
 * This is my example with all values shown:
-![Audacity Macro Radio Effect](../Assets/Images/AudacityMacroManager.PNG)
+![Audacity Macro Radio Effect](../Images/AudacityMacroManager.PNG)
 * Double click on the Filter Curve EQ command to edit the graph, here's mine:  
-![Audacity Filter Curve EQ Graph](../Assets/Images/Audacity_FilterCurveEQ.PNG)
-4. At the bottom of the Macro Manager, next to `Apply Macro to:`, select **Files**.
+![Audacity Filter Curve EQ Graph](../Images/Audacity_FilterCurveEQ.PNG)
+1. At the bottom of the Macro Manager, next to `Apply Macro to:`, select **Files**.
 2. Browse to your folder from Step 1, and select ALL the files (drag or `CTRL+A`). Click Ok and watch for the output showing the operation completed on each file.
 3. The files are sent to this location by default: **Username\Documents\Audacity\Macro-output**
 4. Locate the folder, and move/cut the files to a new folder to avoid possible duplicates in the future. Add a postfix to the new folder name such as "_RadioEdit01" for tracking.  
@@ -40,23 +40,23 @@ It may be possible to integrate this step into a Macro, but I have not discovere
 4.  Back in your project window, drag the cursor from the **beginning of the first track** straight down  to the last track. In other words, the cursor should be at the **start point of all tracks** but not have any region highlighted. 
 * Think of this as doing a **columnar insert** in a text file. If you have a text file with 10 lines and wanted to insert a character at the start of each line at the same time, you would hold `Alt` and drag the cursor down from the start of the first line to the start of the last line. Then, the character(s) you type are inserted at that position and push the lines to the right. This is what we are doing, with audio. 
 * Dragging down with a large number of assets can be a problem. Alternatively, use this Macro to automate the process and select all start points (note the Track Count value, any number greater than the number of tracks will work) with no risk of error:
-![Audacity Macro to select all track start points](../Assets/Images/AudacityMacro_SelectStartAll.PNG)  
+![Audacity Macro to select all track start points](../Images/AudacityMacro_SelectStartAll.PNG)  
 * Select *Project* next to **Apply Macro to:** and the Macro will run on all the tracks open in the project, close the tool.
-5. Go to **Edit->Paste** and the Prefix will be inserted to all tracks. 
+1. Go to **Edit->Paste** and the Prefix will be inserted to all tracks. 
 * To listen to an individual tracks and check it sounds fine, press `CTRL+U` first to mute all tracks and then you can right-click on an individual track, unmute it, and play. 
-6. This is a great time to check all the track names match the sound, make it short but descriptive to make the programming part much easier. 
-7. Unmute all tracks again before proceeding.
-8. Create a new checkpoint by going to **Save Project->Save Project As** and label it so you know these tracks are ready for export. 
+1. This is a great time to check all the track names match the sound, make it short but descriptive to make the programming part much easier. 
+2. Unmute all tracks again before proceeding.
+3. Create a new checkpoint by going to **Save Project->Save Project As** and label it so you know these tracks are ready for export. 
 
 ### Export All Tracks in Correct Format
 
 1. The first step is to change the sample rate, select all tracks with `CTRL+A` and then select **Tracks->Resample...** from the toolbar.
 2. Enter **44100 Hz**  as the new *Sample Rate* and press enter. Verify all tracks are at the new Sample Rate:
-![Audacity Track Sample Rates](../Assets/Images/Audacity_SampleRate.PNG)  
-3. With all tracks still selected, go to **File->Export->Export Multiple...** to open the dialogue box.
-4. Specify a folder location to save the files, set the *Encoding Options* to **Signed 16-Bit PCM** and if desired enter a custom pre-fix for all the filenames or use the default setting of using the track name as the filename. Example:  
-![Audacity Export Multiple Tracks](../Assets/Images/Audacity_ExportingFiles.PNG)
-5. Click Export and close Audacity, it is now time to move to the **Import** stage in the Unreal Editor.
+![Audacity Track Sample Rates](../Images/Audacity_SampleRate.PNG)  
+1. With all tracks still selected, go to **File->Export->Export Multiple...** to open the dialogue box.
+2. Specify a folder location to save the files, set the *Encoding Options* to **Signed 16-Bit PCM** and if desired enter a custom pre-fix for all the filenames or use the default setting of using the track name as the filename. Example:  
+![Audacity Export Multiple Tracks](../Images/Audacity_ExportingFiles.PNG)
+1. Click Export and close Audacity, it is now time to move to the **Import** stage in the Unreal Editor.
 
 ### Import Audio Files into Unreal Editor
 The Editor has a slow, outdated interface that makes it painful to use at times, and in my experience audio has to imported very carefully else you can crash the editor, lose unsaved work, or worst case override a vanilla sound asset. Custom sound packages, unlike other custom assets, have to be in the main Ravenshield folder, so it makes sense to give your packages very clear names to ensure you are not modifying vanilla sound. Take your time here and do it right. 

@@ -1,0 +1,2 @@
+# Demystifying the Tick Function
+The `Tick()` function is a global operation that is repeating every single frame in the game world, that is **1/60th of a second**. Any class, even custom ones that you compile with the Ravenshield compiler, can call to it and use it to perform continuous procedures in real-time. For example, this is where a Pawn's location and behavior is set. It is not advisable to over-use calls to the function as this can bog down game performance.  

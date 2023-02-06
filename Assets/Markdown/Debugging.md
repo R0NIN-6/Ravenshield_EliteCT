@@ -14,12 +14,14 @@ Breaking down the above statement:
 ```
 This message is from: MyActor01
 ```
-#### Advanced Strings
+### Advanced Strings
 
-You can expand the concept from the example above and use multiple variables in the same line, to minimize code and clutter on the screen. This example will print the player's pawn class, state, and weapon type.
+You can expand the concept from the example above and use multiple variables in the same line, to minimize code and clutter on the screen. This example will print the player's class, state, and location.
 ```c++
-R6PlayerController(GetCanvas().Viewport.Actor).ClientMessage(" This message is from: " $self);
+//Assumes in a Player Controller class therefore it is not necessary to cast
+ClientMessage(" This message is from: " $self$ " | state: "$self.GetStateName()$" | Location:"$self.location );
 ```
+Try to create your debug commands so that you can print as much relevant data as possible, rather than repeating one-off commands. 
 
 Repeat this process until the code is as refined as you wish, and then prepare for your next upload. But first, you'll have to remove all those on-screen messages and compile again. This introduces the next dilemna; how can you quickly find all your `ClientMessage` statements in a class that is potentially 1000's of lines, comment them out, but keep them intact so that I can easily find them if I need to go back to debugging? There are many ways one could programmatically do this, but I settled on using Regular Expressions in my search.  
 
@@ -27,7 +29,7 @@ Repeat this process until the code is as refined as you wish, and then prepare f
 I use Notepad++ for searching through files because as I've mentioned elsewhere the interface is superior to VS Code's built-in searching mechanism. Not only that, it's a nice to have a separation of tools so that I am not trying to do too much from VS Code and potentially making an edit in the wrong location. 
 1. Open your `.uc` file in Notepad++ with syntax highlighting on (set language to `java` or `C`), or files if your mod contains multiple classes. Close any other files in this window of Notepad++.
 2. Open the search tool, and in the bottom left check `Regular Expression` in the search mode, as seen below.  
-![Notepad++ Search with Regular Expressions](..\Images\NPRegEx.PNG)  
+![Notepad++ Search with Regular Expressions](../Images/NPRegEx.PNG)  
 3. The value in the search field is:
 ```
 ^\s*R6PlayerController\(GetCanvas\(\).Viewport.Actor\).ClientMessage\(

@@ -1,4 +1,4 @@
-# **Elite Counter-Terror 2.071**
+# **Elite Counter-Terror 2.073**
 
 # Rainbow Six 3 Single-Player Mod
 
@@ -18,10 +18,10 @@ ECT contains new code classes and icons. There are 2 ways to install depending o
 1. On a **vanilla** install with OpenRVS[^4], Copy the contents of *`StandaloneFiles/VanillaVersion`* into your Ravenshield directory.[^2] 
 [^2]: Advanced users may prefer to edit their **`Ravenshield.mod`** file manually, to do so make sure to swap the default AI, pawn, and player controller class as well as add the actor package at the bottom. Refer to my **`.mod`** file to see the correct naming convention.
 
-* This version will see fewer updates because the majority of development is spent on the other versions, as of 2.06 it has the same features except for those that are related to other mods, i.e. team using their lasers).  
+* This version will see fewer updates because the majority of development is spent on the other versions, as of 2.073 it has the same features except for those that are related to other mods, i.e. team using their lasers).  
 
 2. On a Ravenshield copy with the latest **Supply Drops (Oct 2020 + patch 1)** installed, copy the contents of *`StandaloneFiles/SupplyDropsVersion`* files into the Ravenshield directory.[^3] 
-* You will see `ECT v2.071 | SD by Twi` in the bottom right corner of the Supply Drop main menu if installed correctly. 
+* You will see `ECT v2.073 | SD by Twi` in the bottom right corner of the Supply Drop main menu if installed correctly. 
 
 [^3]: If you want to edit your `SupplyDrops.mod` file manually, make sure you swap the default AI, pawn, and player controller class. You do not need to add the actor package at the bottom because it is compiled differently than the vanilla version.  
 * To force the game to launch directly into the Supply Drops menu, open the file **`Ravensheild/System/OpenRVS.ini`** and enter `SupplyDrop` for the value of `ForceStartMod`, under the section titled `[OpenRVS.OpenMods]`.  
@@ -29,7 +29,7 @@ ECT contains new code classes and icons. There are 2 ways to install depending o
 3. To validate the mod is active while in-game, open the console with the Tilde ``'`'`` key and look for the string :  
 
 ```
-Elite Counter-Terror v2.071 initialized | Missiontime is : <In-game mission Time>
+Elite Counter-Terror v2.073 <vanilla or SD> initialized | Mission time is : <In-game mission Time>
 ```
 
 [^4]: The only requirement is _OpenRVS 1.5_ by Twi regardless of the version you use.  
@@ -49,6 +49,7 @@ Elite Counter-Terror v2.071 initialized | Missiontime is : <In-game mission Time
 - Fast move order from your team, when holding shift you'll see "fast move" icon and your teammates will sprint (or crouch run) to the target location instead of walking (works even if the target location is out of sight). The Player's tone in the command is also different from the normal move command.  
 - Teammates give verbal cue when they are reloading (sometimes "weapons dry" and other times "reloading")
 - AI teams will now turn on their night vision when they are in low-light, and turn them off when back in light. This is influenced by the local time in the mission and they will not use NVGs on day-time maps.  
+- Improves Hostage Escort behavior for team, they will no longer leave hostages while they are climbing a ladder. 
 
 ## Rules of Engagement (RoE) guide
 
