@@ -25,6 +25,10 @@ Try to create your debug commands so that you can print as much relevant data as
 
 Repeat this process until the code is as refined as you wish, and then prepare for your next upload. But first, you'll have to remove all those on-screen messages and compile again. This introduces the next dilemna; how can you quickly find all your `ClientMessage` statements in a class that is potentially 1000's of lines, comment them out, but keep them intact so that I can easily find them if I need to go back to debugging? There are many ways one could programmatically do this, but I settled on using Regular Expressions in my search.  
 
+## Overloading the ClientMessage Function 
+
+The sections below are somewhat obsolete after discovering a much easier solution for turning off on-screen messages. From a custom Player Controller class, you can simply overload the ClientMessage function and alter it so that it does not print any text to the screen. 
+
 ## Searching For Patterns with Regular Expressions (RegEx)
 I use Notepad++ for searching through files because as I've mentioned elsewhere the interface is superior to VS Code's built-in searching mechanism. Not only that, it's a nice to have a separation of tools so that I am not trying to do too much from VS Code and potentially making an edit in the wrong location. 
 1. Open your `.uc` file in Notepad++ with syntax highlighting on (set language to `java` or `C`), or files if your mod contains multiple classes. Close any other files in this window of Notepad++.
@@ -40,6 +44,8 @@ I use Notepad++ for searching through files because as I've mentioned elsewhere 
 4. Before any replacing takes place, use this search string or your own and confirm it is finding every line you need by selecting **Find All in Current Document** in the search window. This will output every line that matches in a very convenient pane at the bottom. 
 
 ## Find and Replace 
+
+This was something I did prior to discovering the ClientMessage overload method, I strongly suggest going that route and not doing a mass "find and replace" operation in your code. 
 
 ## Reverse the Process
 
