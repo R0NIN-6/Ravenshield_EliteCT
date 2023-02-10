@@ -9,7 +9,9 @@
 - View the [readme](Assets/ECT/ECT_readme.md)  
 - View the [change-log](Assets/ECT/ECT_Changelog.md)
 - Watch gameplay [videos](https://www.youtube.com/@ac11b63)  
-
+- Add-ons
+  - [The Advanced Spectator Mod]()
+  - The ECT Voice-Manager mod
  <!-- Add Table of Contents here -->
 
 # Table of Contents
@@ -36,7 +38,7 @@
    - [3.3 Enemy Template file](Assets/RavenshieldFiles/EnemyTemplateFile.tpt)
    - [3.4 Hostage Template file](Assets/RavenshieldFiles/HostageTemplateFile.tph)
    - [3.5 Markdown Readme Template](Assets/Markdown/MarkdownReadme.md)
-- 4.0 Elite Counter-Terror
+- 4.0 Elite Counter-Terror and Add-ons
   - [4.1 Readme](ECT/ECT_readme.md) 
   - [4.2 Change-log](ECT/ECT_Changelog.md) 
   <!-- Add more as you expand the documentation for ECT ---> 

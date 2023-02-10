@@ -69,8 +69,4 @@ The Editor has a slow, outdated interface that makes it painful to use at times,
 6. Save the package first in the root sounds folder, and then immediately after in the Code Environment Sounds folder.
 7. Play any voice line for preview, and then close the Unreal Editor when ready to move on to the programming stage.
 
-### Using Sound Package in UnrealScript classes
-This stage is in development
-1. Create a VoiceManager Actor class
-2. Import audio data at start of file
-3. Using tick or timer, check every tick for the position of the appropriate character (who will have the new voice applied) and swap their voices in the respective class. 
+The Coding section is covered in this guide
