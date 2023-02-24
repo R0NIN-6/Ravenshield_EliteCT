@@ -1,6 +1,12 @@
 # **Change Log**
 
-### Version 2.073 Patch (1/6/2023)  
+### Version 2.074 Patch (2/24/2023)  
+
+- Fixes random crashing when restarting the game in Observer Mode or quitting to the main menu. 
+- OpenRVS is no longer a prerequisite for the vanilla version.
+- I am working on fixing the actor icon (looks like an eagle) randomly showing up in game, please let me know if you are still seeing it.
+
+### Version 2.073 Patch (2/6/2023)  
 
 - AI teams will not leave hostages while they are still climbing a ladder. 
 
