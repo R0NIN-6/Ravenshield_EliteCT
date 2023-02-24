@@ -1,4 +1,4 @@
-# **Elite Counter-Terror 2.073**
+# **Elite Counter-Terror 2.074**
 
 # Rainbow Six 3 Single-Player Mod
 
@@ -15,13 +15,13 @@ SHOOT-MOVE-COMMUNICATE-KILL
 ECT contains new code classes and icons. There are 2 ways to install depending on your preference. [^1]
 
 [^1]: If you have ECT 1.27 or prior, I recommend removing it and doing a fresh install of the game. Version 2 and forward will not be compatible due to a new folder structure. 
-1. On a **vanilla** install with OpenRVS[^4], Copy the contents of *`StandaloneFiles/VanillaVersion`* into your Ravenshield directory.[^2] 
+1. On a **vanilla** install[^4], Copy the contents of *`StandaloneFiles/VanillaVersion`* into your Ravenshield directory.[^2] 
 [^2]: Advanced users may prefer to edit their **`Ravenshield.mod`** file manually, to do so make sure to swap the default AI, pawn, and player controller class as well as add the actor package at the bottom. Refer to my **`.mod`** file to see the correct naming convention.
 
-* This version will see fewer updates because the majority of development is spent on the other versions, as of 2.073 it has the same features except for those that are related to other mods, i.e. team using their lasers).  
+* This version will see fewer updates because the majority of development is spent on the other versions, as of 2.074 it has the same features except for those that are related to other mods, i.e. team using their lasers).  
 
 2. On a Ravenshield copy with the latest **Supply Drops (Oct 2020 + patch 1)** installed, copy the contents of *`StandaloneFiles/SupplyDropsVersion`* files into the Ravenshield directory.[^3] 
-* You will see `ECT v2.073 | SD by Twi` in the bottom right corner of the Supply Drop main menu if installed correctly. 
+* You will see `ECT v2.074 | SD by Twi` in the bottom right corner of the Supply Drop main menu if installed correctly. 
 
 [^3]: If you want to edit your `SupplyDrops.mod` file manually, make sure you swap the default AI, pawn, and player controller class. You do not need to add the actor package at the bottom because it is compiled differently than the vanilla version.  
 * To force the game to launch directly into the Supply Drops menu, open the file **`Ravensheild/System/OpenRVS.ini`** and enter `SupplyDrop` for the value of `ForceStartMod`, under the section titled `[OpenRVS.OpenMods]`.  
@@ -29,10 +29,10 @@ ECT contains new code classes and icons. There are 2 ways to install depending o
 3. To validate the mod is active while in-game, open the console with the Tilde ``'`'`` key and look for the string :  
 
 ```
-Elite Counter-Terror v2.073 <vanilla or SD> initialized | Mission time is : <In-game mission Time>
+Elite Counter-Terror v2.074 <vanilla or SD> initialized | Mission time is : <In-game mission Time>
 ```
 
-[^4]: The only requirement is _OpenRVS 1.5_ by Twi regardless of the version you use.  
+[^4]: As of v2.074, _OpenRVS 1.5_ by Twi is only required for the SD version, not the vanilla version.  
 
 ## ECT Rainbow AI features
 
